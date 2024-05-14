@@ -1,2 +1,7 @@
-# 前端大作业
+README
+===========================
 
+****
+### Author:Andy Lee
+### E-mail:ideal130778@gmail.com
+****
