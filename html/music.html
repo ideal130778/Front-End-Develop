@@ -31,28 +31,308 @@
       <link rel="stylesoeet" href="css/owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
       <style>
+
+
+
+    
          /* 按钮图片样式 */
-      .play-button {
-      position: absolute;
-      top: 35%; 
-      left: 50%; 
-      transform: translate(-50%, -50%);
-      width: 100px;
-      height: 100px;
-      background-image: url('images/MV上播放按钮.png');
-      background-size: cover;
-      cursor: pointer;
-      z-index: 2;
-      }
+        .play-button {
+        position: absolute;
+        top: 35%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        width: 100px;
+        height: 100px;
+        background-image: url('images/MV上播放按钮.png');
+        background-size: cover;
+        cursor: pointer;
+        z-index: 2;
+        }
        
          /* 图片容器样式 */
          .images_main {
            position: relative;
            display: inline-block;
          }
+
+         #controls {
+        text-align: center;
+        margin-top: 20px;
+        }
+
+        #playPauseBtn {
+            padding: 10px 20px;
+        }
+
+        #seekBar {
+            width: 300px;
+            margin: 0 10px;
+        }
+
+
+        .u-cover-4 .msk {
+            background-position: -145px -57px;
+        }
+        .u-cover .msk {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .n-bilst .top {
+            height: 200px;
+            padding: 20px 0 0 19px;
+        }
+        
+        .n-bill {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .n-bill .j-img {
+            width: 120px; /* 设置图片宽度 */
+            height: 120px; /* 设置图片高度 */
+        }
+        .n-bill .tit p {
+        font-size: 30px; /* 设置标题字体大小为16像素 */
+        font-weight: bold; /* 加粗标题文字 */
+        margin-left: 80px;
+        }
+
+        ol {
+        display: block;
+        list-style-type: decimal;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px;
+        unicode-bidi: isolate;
+        margin:0px;
+
+        }
+
+
+
+        .recommended_section {
+          padding: 20px;
+      }
+  
+      .recommended_header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+  
+      .recommended_text {
+          font-size: 24px;
+      }
+  
+      .seemor_bt a {
+          text-decoration: none;
+          color: #007bff;
+      }
+  
+
+
+      .news_section {
+        margin-bottom: 40px; /* 调整这个值以添加外边距 */
+    }
+
+  
+
+      .play-btn {
+          background-color: transparent;
+          color: #007bff;
+          border: none;
+          font-size: 18px;
+          cursor: pointer;
+          width: 20px;
+          height: 20px;
+
+      }
+      .oper {
+        margin-right: 10px; /* 调整这个值以添加右边距 */
+    }
+  
+      .play-btn:hover {
+          color: #0056b3;
+      }
+      .j-img-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .j-img {
+        width: 150px;
+        height: 150px;
+        
+    }
+    .cver {
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* 只在底部增加阴影 */
+            transition: box-shadow 0.3s ease-in-out; /* 添加过渡效果 */
+        }
+        .cver:hover {
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); /* 增加鼠标悬停时的阴影明显度 */
+        }
+    .n-bill {
+    
+    padding: 10px;
+    display: table;
+    width: 100%;
+    margin-bottom: 40px;
+
+    }
+
+    .n-bilst {
+        display: table-row;
+
+    }
+
+    .n-bilst > div {
+        display: table-cell;
+        border: 1.5px solid #BABABA;
+        padding: 0px;
+        text-align: center;
+        background-color: #FAFAFA; /* 设置背景颜色为 #878787 */
+    }
+    .blk dd ol li {
+            font-size: 18px; /* 设置字体大小 */
+            line-height: 60px; /* 设置行高 */
+            padding: 0px; /* 增加内边距 */
+            display: flex;
+            align-items: center;
+            padding-left:30px;
+        }
+        .blk dd ol li:nth-child(odd) {
+            background-color: #f0f0f0;
+        }
+        .blk dd ol li:nth-child(even) {
+            background-color: #DEDEDE;
+        }
+        .blk dd ol li .no {
+            font-weight: bold; /* 加粗 */
+            font-size: 20px; /* 增大字号 */
+            margin-right: 30px; /* 右侧增加空隙 */
+        }
+
+        .blk dd ol li:nth-child(1) .no,
+        .blk dd ol li:nth-child(2) .no,
+        .blk dd ol li:nth-child(3) .no {
+            color: #DE7053; /* 序号1, 2, 3设置为红色 */
+        }
+        .blk dd ol li .no:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)) {
+            color: black; /* 其它序号设置为黑色 */
+        }
+        .blk dd ol li a {
+            flex: 1;
+            text-align: left; /* 内容靠左 */
+        }
+        .play-bar {
+        display: block;
+        bottom: -130px;
+        left: 0;
+        position: fixed;
+        width: 100%;
+        background-image: url('images/播放栏背景.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: bottom 0.5s ease;
+        opacity:0.95;
+        }
+        .bottom-hover-zone {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 40px;
+        background-color: transparent; /* 透明区域 */
+        }
+
+        audio{
+        height: 40px;
+        width:70%;
+
+        }
+
+        .mod_index_tab {
+        height: 50px;
+        text-align: center;
+        }
+
+
+        .index_tab__item {
+        display: inline-block;
+        font-size: 15px;
+        margin: 0 24px;
+        color: #333;
+        }
+        .index_tab__item--current {
+        color: #31c27c;
+        }
+            
        </style>
    </head>
    <body>
+
+
+    <script src="script.js"></script>
+
+
+    <script>
+        const audioPlayer = document.getElementById('audioPlayer');
+        const playPauseBtn = document.getElementById('playPauseBtn');
+        const seekBar = document.getElementById('seekBar');
+        const currentTime = document.getElementById('currentTime');
+        const duration = document.getElementById('duration');
+
+        function togglePlay() {
+            if (audioPlayer.paused) {
+                audioPlayer.play();
+                playPauseBtn.textContent = '暂停';
+            } else {
+                audioPlayer.pause();
+                playPauseBtn.textContent = '播放';
+            }
+        }
+
+        function updateSeekBar() {
+            seekBar.value = (audioPlayer.currentTime / audioPlayer.duration) * 100;
+            currentTime.textContent = formatTime(audioPlayer.currentTime);
+        }
+
+        function formatTime(time) {
+            const minutes = Math.floor(time / 60);
+            const seconds = Math.floor(time % 60);
+            return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+        }
+
+        audioPlayer.addEventListener('timeupdate', updateSeekBar);
+
+        audioPlayer.addEventListener('loadedmetadata', () => {
+            duration.textContent = formatTime(audioPlayer.duration);
+        });
+
+        playPauseBtn.addEventListener('click', togglePlay);
+
+        seekBar.addEventListener('input', () => {
+            audioPlayer.currentTime = (seekBar.value / 100) * audioPlayer.duration;
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       
 <div class="header_section">
@@ -95,6 +375,9 @@
 </div>
 
 
+
+
+
       <!-- header section end -->
       <!-- music section start -->
       <div class="news_section layout_padding">
@@ -112,6 +395,13 @@
               <h1 class="recommended_text">为您推荐</h1>
               <div class="seemor_bt"><a href="#">查看更多</a></div>
           </div>
+          <div class="mod_index_tab">
+            <a class="index_tab__item index_tab__item--current">最新</a>
+            <a class="index_tab__item ">内地</a>
+            <a class="index_tab__item ">港台</a>
+            <a class="index_tab__item ">欧美</a>
+            <a class="index_tab__item ">日本</a>
+        </div>
           <table class="table table-striped table-hover">
               <thead>
                   <tr>
@@ -180,51 +470,6 @@
    </div>
 </div>
 
-  <style>
-      .recommended_section {
-          padding: 20px;
-      }
-  
-      .recommended_header {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-      }
-  
-      .recommended_text {
-          font-size: 24px;
-      }
-  
-      .seemor_bt a {
-          text-decoration: none;
-          color: #007bff;
-      }
-  
-
-      table {
-          width: 100%; 
-          border-collapse: collapse;
-      }
-  
-      th, td {
-          padding: 10px;
-          text-align: left;
-          border: 1px solid #ccc;
-      }
-  
-
-      .play-btn {
-          background-color: transparent;
-          color: #007bff;
-          border: none;
-          font-size: 18px;
-          cursor: pointer;
-      }
-  
-      .play-btn:hover {
-          color: #0056b3;
-      }
-  </style>
   
       <div class="news_section_2">
          <div class="container">
@@ -349,7 +594,7 @@
              </div>
          </div>
       </div>
-      <script>
+<script>
 document.addEventListener("DOMContentLoaded", function() {
     var playButtons = document.querySelectorAll('.play-button');
     
@@ -393,17 +638,257 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-      </script>
-      <div class="news_section layout_padding">
-         <div class="container">
-             <div class="news_taital_main">
-                 <h1 class="latest_text">排行榜</h1> 
-                 <div class="seemor_bt"><a href="#">查看更多</a></div> 
-             </div>
-         </div>
-     </div>
-      
-     
+</script>
+
+<div class="news_section layout_padding">
+    <div class="container">
+        <div class="news_taital_main">
+            <h1 class="latest_text">排行榜</h1> 
+            <div class="seemor_bt"><a href="#">查看更多</a></div> 
+        </div>
+    </div>
+</div>
+
+
+<div class="n-bill">
+    <div class="n-bilst" id="top-flag">
+        <div style="display: inline-block; vertical-align: top; width: 33%;">
+            <dl class="blk">
+                <dt class="top">
+                    <div class="j-img-container">
+                        <div class="cver u-cover u-cover-4">
+                            <img class="j-img" data-src="http://p4.music.126.net/pcYHpMkdC69VVvWiynNklA==/109951166952713766.jpg?param=100y100" src="http://p4.music.126.net/pcYHpMkdC69VVvWiynNklA==/109951166952713766.jpg?param=100y100">
+                        </div>
+                        <div class="tit">
+                            <p>飙升榜</p>
+                        </div>
+                    </div>
+                </dt>
+                <dd>
+                    <ol>
+                        <li onmouseover="this.className='z-hvr'" onmouseout="this.className=''">
+                            <span class="no no-top">1</span>
+                            <a href="/song?id=2107560170" class="nm s-fc0 f-thide" title="七月七日晴">七月七日晴</a>
+                            <div class="oper">
+                                <img class="playButton" data-index="0" src="images/播放按钮.png" alt="播放" style="width: 20px; height: 20px;">
+                                <img class="heartImage" src="images/爱心未收藏.png" alt="收藏" style="width: 20px; height: 20px;">
+                            </div>
+                        </li>
+                        <li onmouseover="this.className='z-hvr'" onmouseout="this.className=''">
+                            <span class="no no-top">2</span>
+                            <a href="/song?id=2156224584" class="nm s-fc0 f-thide" title="月半小夜曲">月半小夜曲</a>
+                            <div class="oper">
+                                <img class="playButton" data-index="1" src="images/播放按钮.png" alt="播放" style="width: 20px; height: 20px;">
+                                <img class="heartImage" src="images/爱心未收藏.png" alt="收藏" style="width: 20px; height: 20px;">
+                            </div>
+                        </li>
+                        <li onmouseover="this.className='z-hvr'" onmouseout="this.className=''">
+                            <span class="no no-top">3</span>
+                            <a href="/song?id=2154148199" class="nm s-fc0 f-thide" title="有你的快乐">有你的快乐</a>
+                            <div class="oper">
+                                <img class="playButton" data-index="2" src="images/播放按钮.png" alt="播放" style="width: 20px; height: 20px;">
+                                <img class="heartImage" src="images/爱心未收藏.png" alt="收藏" style="width: 20px; height: 20px;">
+                            </div>
+                        </li>
+                    </ol>
+                </dd>
+            </dl>
+        </div>
+
+        <div style="display: inline-block; vertical-align: top; width: 33%;">
+            <dl class="blk">
+                <dt class="top">
+                    <div class="j-img-container">
+                        <div class="cver u-cover u-cover-4">
+                            <img class="j-img" data-src="http://p3.music.126.net/wVmyNS6b_0Nn-y6AX8UbpQ==/109951166952686384.jpg?param=100y100" src="http://p3.music.126.net/wVmyNS6b_0Nn-y6AX8UbpQ==/109951166952686384.jpg?param=100y100">
+                        </div>
+                        <div class="tit">
+                            <p>新歌榜</p>
+                        </div>
+                    </div>
+                </dt>
+                <dd>
+                    <ol>
+                        <li onmouseover="this.className='z-hvr'" onmouseout="this.className=''">
+                            <span class="no no-top">1</span>
+                            <a href="/song?id=2095253997" class="nm s-fc0 f-thide" title="说爱你">说爱你</a>
+                            <div class="oper">
+                                <img class="playButton" src="images/播放按钮.png" alt="播放" style="width: 20px; height: 20px;">
+                                <img class="heartImage" src="images/爱心未收藏.png" alt="收藏" style="width: 20px; height: 20px;">
+                            </div>
+                        </li>
+                        <li onmouseover="this.className='z-hvr'" onmouseout="this.className=''">
+                            <span class="no no-top">2</span>
+                            <a href="/song?id=2110023759" class="nm s-fc0 f-thide" title="普通朋友">普通朋友</a>
+                            <div class="oper">
+                                <img class="playButton" src="images/播放按钮.png" alt="播放" style="width: 20px; height: 20px;">
+                                <img class="heartImage" src="images/爱心未收藏.png" alt="收藏" style="width: 20px; height: 20px;">
+                            </div>
+                        </li>
+                        <li onmouseover="this.className='z-hvr'" onmouseout="this.className=''">
+                            <span class="no no-top">3</span>
+                            <a href="/song?id=2156881193" class="nm s-fc0 f-thide" title="凭什么忘记">凭什么忘记</a>
+                            <div class="oper">
+                                <img class="playButton" src="images/播放按钮.png" alt="播放" style="width: 20px; height: 20px;">
+                                <img class="heartImage" src="images/爱心未收藏.png" alt="收藏" style="width: 20px; height: 20px;">
+                            </div>
+                        </li>
+                    </ol>
+                </dd>
+            </dl>
+        </div>
+        <div style="display: inline-block; vertical-align: top; width: 33%;">
+            <dl class="blk">
+                <dt class="top">
+                    <div class="j-img-container">
+                        <div class="cver u-cover u-cover-4">
+                            <img class="j-img" data-src="http://p3.music.126.net/iFZ_nw2V86IFk90dc50kdQ==/109951166961388699.jpg?param=100y100" src="http://p3.music.126.net/iFZ_nw2V86IFk90dc50kdQ==/109951166961388699.jpg?param=100y100">
+                        </div>
+                        <div class="tit">
+                            <p>原创榜</p>
+                        </div>
+                    </div>
+                </dt>
+                <dd>
+                    <ol>
+                        <li onmouseover="this.className='z-hvr'" onmouseout="this.className=''">
+                            <span class="no no-top">1</span>
+                            <a href="/song?id=2143932711" class="nm s-fc0 f-thide" title="无赖">无赖</a>
+                            <div class="oper">
+                                <img class="playButton" src="images/播放按钮.png" alt="播放" style="width: 20px; height: 20px;">
+                                <img class="heartImage" src="images/爱心未收藏.png" alt="收藏" style="width: 20px; height: 20px;">
+                            </div>
+                        </li>
+                        <li onmouseover="this.className='z-hvr'" onmouseout="this.className=''">
+                            <span class="no no-top">2</span>
+                            <a href="/song?id=1880855946" class="nm s-fc0 f-thide" title="偏偏喜欢你">偏偏喜欢你</a>
+                            <div class="oper">
+                                <img class="playButton" src="images/播放按钮.png" alt="播放" style="width: 20px; height: 20px;">
+                                <img class="heartImage" src="images/爱心未收藏.png" alt="收藏" style="width: 20px; height: 20px;">
+                            </div>
+                        </li>
+                        <li onmouseover="this.className='z-hvr'" onmouseout="this.className=''">
+                            <span class="no no-top">3</span>
+                            <a href="/song?id=2156872127" class="nm s-fc0 f-thide" title="思念难捱如晚风侵袭">思念难捱如晚风侵袭</a>
+                            <div class="oper">
+                                <img class="playButton" src="images/播放按钮.png" alt="播放" style="width: 20px; height: 20px;">
+                                <img class="heartImage" src="images/爱心未收藏.png" alt="收藏" style="width: 20px; height: 20px;">
+                            </div>
+                        </li>
+                    </ol>
+                </dd>
+            </dl>
+        </div>
+
+    </div>
+<!-- 这是播放栏 -->
+<div class="play-bar" style="position: fixed; bottom: -130px; width: 100%; background: #333; color: white; display: flex; align-items: center; transition: bottom 0.3s;">
+    <img id="play-bar-img" src="" alt="歌曲图片" style="width: 60px; height: 60px; margin-right: 10px;">
+    <span id="play-bar-title">歌曲名</span>
+    <audio id="audio-player" controls style="margin-left: 20px;">
+        <source id="audio-source" src="" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</div>
+    
+
+</div>
+<div class="bottom-hover-zone" id="bottomHoverZone"></div>  
+<!-- 这是用来放在屏幕底部的透明区域，当鼠标悬浮其上上时会唤醒播放栏 -->
+
+
+
+<script>
+// 储存歌曲的url
+var audiourl = [
+    {
+        url: "audios/Avid_21-25-19.mp3",
+        title: "七月七日晴",
+        img: "images/img-1.png"
+    },
+    {
+        url: "audios/Avid_21-25-20.mp3",
+        title: "月半小夜曲",
+        img: "images/img-2.png"
+    },
+    {
+        url: "audios/Avid_21-25-21.mp3",
+        title: "有你的快乐",
+        img: "images/img-3.png"
+    }
+];
+var heartImages = document.getElementsByClassName("heartImage");
+Array.prototype.forEach.call(heartImages, function(img) {
+    var heartFlag = true;
+    img.onclick = function() {
+        if (heartFlag) {
+            img.src = "images/爱心已收藏.png";
+            heartFlag = false;
+        } else {
+            img.src = "images/爱心未收藏.png";
+            heartFlag = true;
+        }
+    }
+});
+
+var playBar = document.querySelector('.play-bar');
+var playBarImg = document.getElementById("play-bar-img");
+var playBarTitle = document.getElementById("play-bar-title");
+var audioPlayer2 = document.getElementById("audio-player");
+var audioSource = document.getElementById("audio-source");
+
+var playButtons = document.getElementsByClassName("playButton");
+Array.prototype.forEach.call(playButtons, function(button) {
+    button.onclick = function() {
+        var index = button.getAttribute("data-index");
+        var music = audiourl[index];
+
+        playBarImg.src = music.img;
+        playBarTitle.textContent = music.title;
+        audioSource.src = music.url;
+        audioPlayer2.load();
+        
+        audioPlayer2.play();  // 自动播放音频
+
+        playBar.style.bottom = "0px";
+        setTimer();
+
+        playBar.style.bottom = "0px";
+        setTimer();
+    }
+});
+
+var timer;
+var bottomHoverZone = document.getElementById("bottomHoverZone");
+
+function hidePlayBar() {
+    playBar.style.bottom = "-130px";
+}
+
+function showPlayBar() {
+    playBar.style.bottom = "0px";
+}
+
+function setTimer() {
+    timer = setTimeout(hidePlayBar, 4000); // 设置 4000 毫秒后自动隐藏播放栏
+}
+
+playBar.onmouseover = function() {
+    clearTimeout(timer); // 当鼠标悬停在播放栏上时，清除计时器
+    playBar.style.bottom = "0px";
+}
+bottomHoverZone.onmouseover = function() {
+    playBar.style.bottom = "0px"; // 当鼠标悬浮在屏幕底部时令播放栏重新出现
+}
+
+playBar.onmouseout = function() {
+    setTimer(); // 当鼠标离开播放栏时，重新设置计时器
+}
+</script>
+
+
+
+
 
      
       <!-- music section end -->
@@ -477,5 +962,8 @@ document.addEventListener("DOMContentLoaded", function() {
       <!-- javascript --> 
       <script src="js/owl.carousel.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>  
+
+
+
    </body>
 </html>
