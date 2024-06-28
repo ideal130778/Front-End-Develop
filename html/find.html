@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-    <script src="jquery-3.4.1.min.js"></script>
-    <style>
-        * {
-            margin: 0 auto;
-            padding: 0;
-            text-decoration: none;
-            list-style: none;
-            overflow: hidden;
-        }
-        .box {
-            width: 800px;
-            height: 400px;
-            zoom: 1;
-        }
-        .box:after{
-            clear: both;
-            content: '.';
-            display: block;
-            height: 0;
-            visibility: hidden;
-        }
-        #contex {
-            width: 800px;
-            height: 400px;
-            position: relative;
-            overflow: hidden;
-            float: left;
-        }
-        .pictures {
-            width: 20000px;
-            height: 400px;
-            transition: all 0s;
-            zoom: 1;
-        }
-        .pictures:after {
-            clear: both;
-            content: '.';
-            display: block;
-            height: 0;
-            visibility: hidden;
-        }
-        img {
-            width: 800px;
-            height: 400px;
-            float: left;
-            display: block;
-        }
-    </style>
+    <link rel="stylesheet" href="css/find.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
 </head>
+
 <body>
-        <div class="box">
-            <div id="context">
-                <div class="pictures">
-                    <img src="img/lunbo1.jpg" />
-                    <img src="img/lunbo2.jpg" />
-                    <img src="img/lunbo3.jpg" />
-                    <img src="img/lunbo4.jpg" />
-                    <img src="img/lunbo5.jpg" />
-                    <img src="img/lunbo6.jpg" />
-                    <img src="img/lunbo7.jpg" />
-                </div>
+    <div class="box">
+        <div id="context">
+            <div class="pictures">
+                <img src="img/junjie.png" />
+                <img src="img/jielun.png" />
+                <img src="img/taylor.png" />
+                <img src="img/aide.png" />
+                <img src="img/you.png" />
+                <img src="img/modern.png" />
+                <img src="img/aut.jpg" />
             </div>
         </div>
+    </div>
+    <div class="main" id="newSong">
+        <div class="main-inner">
+          <div class="main-title">
+            <h2>Title Here</h2>
+          </div>
+          <div class="main-slider tab-cont">
+            <ul class="slider-wrapper">
+              <li>
+                <a href="#" class="img">
+                  <img src="img/slider_img1.jpg" alt="#">
+                  <span class="mask"></span>
+                  <i class="icon-play"></i>
+                </a>
+                <div class="info">
+                  <div class="title">
+                    <a href="#">Illusion</a>
+                    <i class="icon-sprite"></i>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#" class="img">
+                  <img src="img/slider_img2.jpg" alt="#">
+                  <span class="mask"></span>
+                  <i class="icon-play"></i>
+                </a>
+                <div class="info">
+                  <div class="title">
+                    <a href="#">皆可</a>
+                    <i class="icon-sprite"></i>
+                  </div>
+               
+                </div>
+              </li>
+              <li>
+                <a href="#" class="img">
+                  <img src="img/slider_img3.jpg" alt="#">
+                  <span class="mask"></span>
+                  <i class="icon-play"></i>
+                </a>
+                <div class="info">
+                  <div class="title">
+                    <a href="#">Stardust</a>
+                    <i class="icon-sprite"></i>
+                  </div>
+                 
+                </div>
+              </li>
+              <li>
+                <a href="#" class="img">
+                  <img src="img/slider_img4.jpg" alt="#">
+                  <span class="mask"></span>
+                  <i class="icon-play"></i>
+                </a>
+                <div class="info">
+                  <div class="title">
+                    <a href="#">lonely again</a>
+                    <i class="icon-sprite"></i>
+                  </div>
+                </div>
+              </li>  
+              <li>
+                <a href="#" class="img">
+                  <img src="img/slider_img5.jpg" alt="#">
+                  <span class="mask"></span>
+                  <i class="icon-play"></i>
+                </a>
+                <div class="info">
+                  <div class="title">
+                    <a href="#">Slide</a>
+                    <i class="icon-sprite"></i>
+                  </div>
+                </div>
+              </li>  
+      </div>
+
 </body>
-<script>
-    $(function () {
-        var n = 0;
-        var t;
-        function picImg (num) {
-            clearTimeout(t);
-            if (typeof num == "number") {
-                n = num;
-            } else {
-                n++;
-            }
-            if (n > 6) { n = 0; }
-            $('#context .pictures').css("margin-left", n * -800 + "px");
-            if (typeof num != "number") {
-                t = setTimeout(function () {
-                    picImg();
-                }, 1000);
-            }
-        }
-        t = setTimeout(function () {
-            picImg();
-        }, 1000);
-    });
+<script src="js/find.js">
+
 </script>
+
 </html>

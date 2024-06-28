@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,54 +10,108 @@
             padding: 0;
             margin: auto;
         }
-    
+
         header {
             width: 100%;
             height: 70px;
             background-color: black;
         }
-        ul {
+
+        .nav {
             width: 800px;
             height: 70px;
         }
-    
-        .first {
-            margin-left: 20px;
-        }
-    
-        .last {
-            margin-right: 20px;
-        }
-        iframe {
-            width: 100%;
-            height: 400px;
-            
-        }
-    
-        ul li {
-            float: left;
+
+        .first,
+        .second,
+        .third {
             list-style: none;
+            float: left;
             text-align: center;
             height: 70px;
             line-height: 70px;
-            width: 110px;
-            margin: 0 10px;
+            width: 120px;
             color: white;
+            background-color: black;
         }
+
+        .first {
+            background-color: skyblue;
+        }
+
+        .last {
+            float: left;
+            width: 300px;
+            height: 30px;
+            margin: 20px 30px;
+        }
+
+        .box {
+            display: inline-block;
+            width: 286px;
+            height: 26px;
+            border: 2px solid skyblue;
+            margin: 0;
+        }
+
+        .login {
+            float: left;
+            width: 60px;
+            height: 30px;
+            margin: 20px 10px;
+            color: white;
+            font-size: 18px;
+            font-family: 黑体;
+            text-align: center;
+            line-height: 30px;
+            background-color: skyblue;
+        }
+
+        input {
+            float: left;
+            width: 250px;
+            height: 26px;
+            outline: none;
+            border: none;
+            font-size: 16px;
+            font-family: 黑体;
+            text-indent: 5px;
+        }
+
+        button {
+            float: left;
+            height: 26px;
+            width: 36px;
+            color: white;
+            background-color: skyblue;
+            outline: none;
+            border: none;
+        }
+
+        iframe {
+            width: 100%;
+            height: 804px;
+
+        }
+
+
         a {
             color: #fff;
             text-decoration: none;
         }
+
         footer {
             width: 100%;
             height: 120px;
             background-color: black;
         }
+
         footer ul {
             width: 800px;
             height: 120px;
             margin: 0 auto;
         }
+
         footer ul li {
             float: left;
             list-style: none;
@@ -68,197 +123,38 @@
             margin: 45px auto;
             border-left: 2px solid white;
         }
+
+        footer ul li:hover {
+            color: skyblue;
+        }
+
         footer ul li.one {
             width: 160px;
             border: none;
         }
-
-
-    
-        .main {
-  overflow: hidden;
-  position: relative;
-}
- 
-
-
-
-
-
-.main-title {
-  position: relative;
-  width: 490px;
-  height: 46px;
-  padding-top: 80px;
-  margin: 0 auto 50px;
-}
-.main-title .title {
-  width: 490px;
-  text-align: center;
-}
-
-
-.main-slider {
-  overflow: hidden;
-  width: 1270px;
-}
-
-.main-slider .slider-wrapper {
-  position: relative;
-  left: 10px;
-  height: 314px;
-  margin-bottom: 35px;
-}
-.slider-wrapper li {
-  float: left;
-  width: 300px;
-  height: 414px;
-}
-.slider-wrapper .img {
-  position: relative;
-  overflow: hidden;
-  width: 300px;
-  height: 300px;
-}
-.main .img img,
-.main .img i,
-.main .mask,
-.main .icon-play {
-  transition: all 0.4s;
-  -webkit-transition: all 0.4s;
-}
-.main .img:hover img {
-  transform: scale(1.07);
-  -webkit-transform: scale(1.07);
-}
-
-
-.slider-wrapper .info {
-  width: 100%;
-  height: 114px;
-  background-color: rgba(41, 64, 143, 0.8);
-  text-align: center;
-  font-size: 16px;
-}
-.slider-wrapper .info-event  .info {
-  background-color: rgba(234, 129, 129, 0.6);
-}
-.slider-wrapper li:hover .info {
-  background-color: #4282e2 !important;
-}
-.slider-wrapper .info .title {
-  padding-top: 34px;
-}
-
-img {
-  vertical-align: top;
-}
-
-#newSong {
-  height: 700px;
-  background: url(../newSong_bg.jpg) no-repeat center;
-}
-
-#newSong .main-slider .slider-wrapper {
-  width: 4500px;
-}
-
-    .title {
-        font-size: 20px; 
-        margin-top: -15px; 
-        margin-bottom: 10px; 
-       
-    }
-
     </style>
 </head>
+
 <body>
     <header>
-        <div>
-            <ul class="nav">
+        <div class="nav">
+            <ul>
                 <li data-src="find.html" class="first">发现</li>
-                <li data-src="singer.html">歌手</li>
-                <li>
-                  <a class="nav-link" href="music.html">歌曲</a> 
-                  <!-- 这里添加了我网页的链接 -->
-              </li>
-                <li data-src="myLove.html" class="last">我的收藏</li>
+                <li data-src="singer.html" class="second">歌手</li>
+                <li data-src="music.html" class="third">歌曲</li>
             </ul>
+            <div class="last">
+                <span class="box">
+                    <input type="text" placeholder="输入你喜爱的歌曲">
+                    <button>搜索</button>
+                </span>
+            </div>
+            <div class="login">
+                登录
+            </div>
         </div>
     </header>
     <iframe src="find.html" frameborder="0" id="iframe" scrolling="no"></iframe>
-
- 
-   <!-- 新歌首发 -->
-   <div class="main" id="newSong">
-    <div class="main-inner">
-      <div class="main-title">
-        <h2 class="title"><i></i></h2>
-        <span class="line line-left"></span>
-        <span class="line line-right"></span>
-      </div>
-      
-      <div class="main-slider tab-cont">
-        <ul class="slider-wrapper">
-          <li>
-            <a href="#" class="img">
-              <img src="slider_img1.jpg" alt="#">
-              <span class="mask"></span>
-              <i class="icon-play"></i>
-            </a>
-            <div class="info">
-              <div class="title">
-                <a href="#">Kiss and Make Up</a>
-                <i class="icon-sprite"></i>
-              </div>
-            </div>
-          </li>
-          <li>
-            <a href="#" class="img">
-              <img src="slider_img2.jpg" alt="#">
-              <span class="mask"></span>
-              <i class="icon-play"></i>
-            </a>
-            <div class="info">
-              <div class="title">
-                <a href="#">Something Just Like This</a>
-                <i class="icon-sprite"></i>
-              </div>
-           
-            </div>
-          </li>
-          <li>
-            <a href="#" class="img">
-              <img src="slider_img3.jpg" alt="#">
-              <span class="mask"></span>
-              <i class="icon-play"></i>
-            </a>
-            <div class="info">
-              <div class="title">
-                <a href="#">By Your Side</a>
-                <i class="icon-sprite"></i>
-              </div>
-             
-            </div>
-          </li>
-          <li>
-            <a href="#" class="img">
-              <img src="slider_img4.jpg" alt="#">
-              <span class="mask"></span>
-              <i class="icon-play"></i>
-            </a>
-            <div class="info">
-              <div class="title">
-                <a href="#">lonely again</a>
-                <i class="icon-sprite"></i>
-              </div>
-             
-            </div>
-          </li>
-         
-  
-  </div>
-  
     <footer>
         <ul>
             <li class="one">联系我们</li>
@@ -270,7 +166,10 @@ img {
     </footer>
 </body>
 <script>
-  let iframe = document.querySelector('#iframe')
+    const b1 = document.querySelector('.first')
+    const b2 = document.querySelector('.second')
+    const b3 = document.querySelector('.third')
+    let iframe = document.querySelector('#iframe')
     //获取导航栏按钮
     let lis = document.querySelectorAll('li')
     //点击导航栏，改变Iframe的src属性，实现页面切换
@@ -278,9 +177,27 @@ img {
         //绑定点击事件
         lis[i].onclick = function (event) {
             iframe.src = event.target.dataset.src
+
         }
 
     }
+
+    b1.addEventListener('click', () => {
+        b1.style.backgroundColor = 'skyblue';
+        b2.style.backgroundColor = 'black';
+        b3.style.backgroundColor = 'black';
+    })
+    b2.addEventListener('click', () => {
+        b1.style.backgroundColor = 'black';
+        b2.style.backgroundColor = 'skyblue';
+        b3.style.backgroundColor = 'black';
+    })
+    b3.addEventListener('click', () => {
+        b1.style.backgroundColor = 'black';
+        b2.style.backgroundColor = 'black';
+        b3.style.backgroundColor = 'skyblue';
+    })
 </script>
 </script>
+
 </html>

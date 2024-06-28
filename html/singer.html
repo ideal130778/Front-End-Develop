@@ -1,238 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/singer.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
     <title>Document</title>
-    <style>
-        * {
-            padding: 0;
-            margin: auto;
-        }
-        main {
-            width: 1204px;
-            height: 746px;
-        }
-        .aside {
-            float: left;
-            width: 400px;
-            height: 740px;
-        }
-        .article {
-            float: left;
-            width: 804px;
-            height: 744px;
-        }
-        .rank {
-            position: relative;
-            width: 400px;
-            height: 100px;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .rank span {
-            margin: 0 75px;
-            position: absolute;
-            width: 250px;
-            height: 50px;
-            top: 50px;
-            left: 0;
-            line-height: 50px;
-            font-size: 28px;
-            background-color: #8ab8f936;
-            border-bottom: 2px solid rgb(44, 125, 245);
-        }
-        .rank_outer {
-            width: 400px;
-            height: 280px;
-            position: relative;
-            overflow: hidden;
-        }
-        .rank_inner {
-            position: absolute;
-            overflow-y: scroll;
-        }
-        .rank_content {
-            width: 400px;
-            height: 280px;
-        }
-        .often {
-            position: relative;
-            width: 400px;
-            height: 100px;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .often span {
-            margin: 0 75px;
-            position: absolute;
-            width: 250px;
-            height: 50px;
-            top: 50px;
-            left: 0;
-            line-height: 50px;
-            font-size: 28px;
-            border-bottom: 2px solid rgba(247, 228, 53, 0.425);
-        }
-        .roles {
-            width: 400px;
-            height: 50px;
-            margin: 10px 0;
-            /*解决盒子上下margin重叠*/
-            display: inline-block;
-        }
-        .role_number {
-            float: left;
-            width: 100px;
-            height: 50px;
-            font-size: 16px;
-            text-align: center;
-            line-height: 50px;
-        }
-        .role_head {
-            float: left;
-            width: 50px;
-            height: 50px;
-        }
-        .role_head img {
-            width: 50px;
-            height: 50px;
-        }
-        .role_name {
-            float: left;
-            width: 200px;
-            height: 50px;
-            text-align: center;
-            line-height: 50px;
-            font-size: 18px;
-            border-radius: 25px;
-        }
-        .recommend {
-            width: 800px;
-            height: 98px;
-            position: relative;
-            background-color: white;
-        }
-        .recommend span {
-            width: 180px;
-            height: 48px;
-            position: absolute;
-            top: 50px;
-            margin:0 10px;
-            text-align: center;
-            line-height: 50px;
-            font-size: 28px;
-            font-family: 'songti';
-            background-color: rgba(225, 243, 249, 0.584);
-            
-            border-bottom: 2px solid rgb(145, 205, 255);
-        }
-        .singers {
-            width: 800px;
-            height: 642px;
-            border-right: 2px solid rgb(222, 222, 222);
-            overflow: hidden;
-            position: relative;
-        }
-        .innerbox {
-            position: absolute;
-            overflow-y: scroll;
-        }
-        .content {
-            width: 800px;
-            height: 642px;
-        }
-        .singer {
-            width: 800px;
-            height: 180px;
-            margin: 10px 0;
-            background-color: transparent;
-            /*解决盒子上下margin重叠*/
-            display: inline-block;
-        }
-        .head {
-            float: left;
-            width: 180px;
-            height: 180px;
-            margin: 0 10px;
-            
-            background-color: #f9f9f9;
-        }
-        .pictures {
-            width: 180px;
-            height: 140px;
-            /*
-            控制图片缩放
-            */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .pictures img {
-            width: 100px;
-            height: 100px;
-        }
-        .pictures img:hover {
-            transform: scale(1.2);
-            transition: all 0.6s;
-        }
-        .head span {
-            display: inline-block;
-            width: 180px;
-            height: 40px;
-            font-size: 18px;
-            text-align: center;
-            line-height: 40px;
-        }
-        .songs {
-            float: left;
-            width: 588px;
-            height: 180px;
-            padding-left: 10px;
-            border-left: solid 2px rgb(72, 243, 255);
-            position: relative;
-        }
-        .song1 {
-            position: absolute;
-            top: 0;
-            width: 600px;
-            height: 40px;
-        }
-        .song2 {
-            position: relative;
-            top: 70px;
-            width: 600px;
-            height: 40px;
-        }
-        .song3 {
-            position: absolute;
-            bottom: 0;
-            width: 600px;
-            height: 40px;
-        }
-        .album {
-            float: left;
-            width: 40px;
-            height: 40px;
-            background-color: white;
-        }
-        .album img {
-            width: 40px;
-            height: 40px;
-        }
-        .play {
-            float: left;
-            margin: 0 20px;
-            width: 450px;
-            height: 40px;
-        }
-        audio {
-            width: 400px;
-            height: 40px;
-        }
-    </style>
-    
+
+
 </head>
+
 <body>
     <main>
         <div class="article">
@@ -247,33 +26,40 @@
                         <div class="singer">
                             <div class="head">
                                 <div class="pictures">
-                                    <img src="zhou.png" alt="">
+                                    <img src="img/zhou.png" alt="">
                                 </div>
                                 <span>周杰伦</span>
                             </div>
-                            <div class="songs">
-                                <div class="song1">
-                                    <div class="album">
-                                        <img src="img/rm3.jpg" alt="">
+                            <div class="outerbox">
+                                <div class="music-container" id="music-container">
+                                    <!-- 音乐信息 -->
+                                    <div class="music-info">
+                                        <!-- 音乐标题 -->
+                                        <h4 id="title"></h4>
+                                        <!-- 音乐播放进度条 -->
+                                        <div class="progress-container" id="progress-container">
+                                            <div class="progress" id="progress"></div>
+                                        </div>
                                     </div>
-                                    <div class="play">
-                                        <audio src="" controls></audio>
+
+                                    <!-- 默认第一首音乐 -->
+                                    <audio src="music/稻香.mp3" id="audio"></audio>
+
+                                    <!-- 音乐封面 -->
+                                    <div class="img-container">
+                                        <img src="img/稻香.jpg" alt="music-cover" id="music-cover">
                                     </div>
-                                </div>
-                                <div class="song2">
-                                    <div class="album">
-                                        <img src="img/rm2.jpg" alt="">
-                                    </div>
-                                    <div class="play">
-                                        <audio src="" controls></audio>
-                                    </div>
-                                </div>
-                                <div class="song3">
-                                    <div class="album">
-                                        <img src="img/rm1.jpg" alt="">
-                                    </div>
-                                    <div class="play">
-                                        <audio src="" controls></audio>
+                                    <!-- 播放控制 -->
+                                    <div class="navigation">
+                                        <button id="prev" class="action-btn">
+                                            <i class="fas fa-backward"></i>
+                                        </button>
+                                        <button id="play" class="action-btn action-btn-big">
+                                            <i class="fas fa-play"></i>
+                                        </button>
+                                        <button id="next" class="action-btn">
+                                            <i class="fas fa-forward"></i>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -281,67 +67,40 @@
                         <div class="singer">
                             <div class="head">
                                 <div class="pictures">
-                                    <img src="zhou.png" alt="">
+                                    <img src="img/deng.png" alt="">
                                 </div>
-                                <span>周杰伦</span>
+                                <span>邓紫棋</span>
                             </div>
-                            <div class="songs">
-                                <div class="song1">
-                                    <div class="album">
-                                        <img src="img/rm3.jpg" alt="">
+                            <div class="outerbox">
+                                <div class="music-container" id="music-container1">
+                                    <!-- 音乐信息 -->
+                                    <div class="music-info">
+                                        <!-- 音乐标题 -->
+                                        <h4 id="title1"></h4>
+                                        <!-- 音乐播放进度条 -->
+                                        <div class="progress-container" id="progress-container1">
+                                            <div class="progress" id="progress1"></div>
+                                        </div>
                                     </div>
-                                    <div class="play">
-                                        <audio src="" controls></audio>
+
+                                    <!-- 默认第一首音乐 -->
+                                    <audio src="music/光年之外.mp3" id="audio1"></audio>
+
+                                    <!-- 音乐封面 -->
+                                    <div class="img-container">
+                                        <img src="img/光年之外.jpg" alt="music-cover" id="music-cover1">
                                     </div>
-                                </div>
-                                <div class="song2">
-                                    <div class="album">
-                                        <img src="img/rm2.jpg" alt="">
-                                    </div>
-                                    <div class="play">
-                                        <audio src="" controls></audio>
-                                    </div>
-                                </div>
-                                <div class="song3">
-                                    <div class="album">
-                                        <img src="img/rm1.jpg" alt="">
-                                    </div>
-                                    <div class="play">
-                                        <audio src="" controls></audio>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="singer">
-                            <div class="head">
-                                <div class="pictures">
-                                    <img src="zhou.png" alt="">
-                                </div>
-                                <span>周杰伦</span>
-                            </div>
-                            <div class="songs">
-                                <div class="song1">
-                                    <div class="album">
-                                        <img src="img/rm3.jpg" alt="">
-                                    </div>
-                                    <div class="play">
-                                        <audio src="" controls></audio>
-                                    </div>
-                                </div>
-                                <div class="song2">
-                                    <div class="album">
-                                        <img src="img/rm2.jpg" alt="">
-                                    </div>
-                                    <div class="play">
-                                        <audio src="" controls></audio>
-                                    </div>
-                                </div>
-                                <div class="song3">
-                                    <div class="album">
-                                        <img src="img/rm1.jpg" alt="">
-                                    </div>
-                                    <div class="play">
-                                        <audio src="" controls></audio>
+                                    <!-- 播放控制 -->
+                                    <div class="navigation">
+                                        <button id="prev1" class="action-btn">
+                                            <i class="fas fa-backward"></i>
+                                        </button>
+                                        <button id="play1" class="action-btn action-btn-big">
+                                            <i class="fas fa-play"></i>
+                                        </button>
+                                        <button id="next1" class="action-btn">
+                                            <i class="fas fa-forward"></i>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -349,33 +108,40 @@
                         <div class="singer">
                             <div class="head">
                                 <div class="pictures">
-                                    <img src="zhou.png" alt="">
+                                    <img src="img/lin.png" alt="">
                                 </div>
-                                <span>周杰伦</span>
+                                <span>林俊杰</span>
                             </div>
-                            <div class="songs">
-                                <div class="song1">
-                                    <div class="album">
-                                        <img src="img/rm3.jpg" alt="">
+                            <div class="outerbox">
+                                <div class="music-container" id="music-container2">
+                                    <!-- 音乐信息 -->
+                                    <div class="music-info">
+                                        <!-- 音乐标题 -->
+                                        <h4 id="title2"></h4>
+                                        <!-- 音乐播放进度条 -->
+                                        <div class="progress-container" id="progress-container2">
+                                            <div class="progress" id="progress2"></div>
+                                        </div>
                                     </div>
-                                    <div class="play">
-                                        <audio src="" controls></audio>
+
+                                    <!-- 默认第一首音乐 -->
+                                    <audio src="music/背对背拥抱.mp3" id="audio2"></audio>
+
+                                    <!-- 音乐封面 -->
+                                    <div class="img-container">
+                                        <img src="img/背对背拥抱.jpg" alt="music-cover" id="music-cover2">
                                     </div>
-                                </div>
-                                <div class="song2">
-                                    <div class="album">
-                                        <img src="img/rm2.jpg" alt="">
-                                    </div>
-                                    <div class="play">
-                                        <audio src="" controls></audio>
-                                    </div>
-                                </div>
-                                <div class="song3">
-                                    <div class="album">
-                                        <img src="img/rm1.jpg" alt="">
-                                    </div>
-                                    <div class="play">
-                                        <audio src="" controls></audio>
+                                    <!-- 播放控制 -->
+                                    <div class="navigation">
+                                        <button id="prev2" class="action-btn">
+                                            <i class="fas fa-backward"></i>
+                                        </button>
+                                        <button id="play2" class="action-btn action-btn-big">
+                                            <i class="fas fa-play"></i>
+                                        </button>
+                                        <button id="next2" class="action-btn">
+                                            <i class="fas fa-forward"></i>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -383,37 +149,127 @@
                         <div class="singer">
                             <div class="head">
                                 <div class="pictures">
-                                    <img src="zhou.png" alt="">
+                                    <img src="img/cai.png" alt="">
                                 </div>
-                                <span>周杰伦</span>
+                                <span>蔡依林</span>
                             </div>
-                            <div class="songs">
-                                <div class="song1">
-                                    <div class="album">
-                                        <img src="img/rm3.jpg" alt="">
+                            <div class="outerbox">
+                                <div class="music-container" id="music-container3">
+                                    <!-- 音乐信息 -->
+                                    <div class="music-info">
+                                        <!-- 音乐标题 -->
+                                        <h4 id="title3"></h4>
+                                        <!-- 音乐播放进度条 -->
+                                        <div class="progress-container" id="progress-container3">
+                                            <div class="progress" id="progress3"></div>
+                                        </div>
                                     </div>
-                                    <div class="play">
-                                        <audio src="" controls></audio>
+
+                                    <!-- 默认第一首音乐 -->
+                                    <audio src="music/日不落.mp3" id="audio3"></audio>
+
+                                    <!-- 音乐封面 -->
+                                    <div class="img-container">
+                                        <img src="img/日不落.jpg" alt="music-cover" id="music-cover3">
                                     </div>
-                                </div>
-                                <div class="song2">
-                                    <div class="album">
-                                        <img src="img/rm2.jpg" alt="">
-                                    </div>
-                                    <div class="play">
-                                        <audio src="" controls></audio>
-                                    </div>
-                                </div>
-                                <div class="song3">
-                                    <div class="album">
-                                        <img src="img/rm1.jpg" alt="">
-                                    </div>
-                                    <div class="play">
-                                        <audio src="" controls></audio>
+                                    <!-- 播放控制 -->
+                                    <div class="navigation">
+                                        <button id="prev3" class="action-btn">
+                                            <i class="fas fa-backward"></i>
+                                        </button>
+                                        <button id="play3" class="action-btn action-btn-big">
+                                            <i class="fas fa-play"></i>
+                                        </button>
+                                        <button id="next3" class="action-btn">
+                                            <i class="fas fa-forward"></i>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="singer">
+                            <div class="head">
+                                <div class="pictures">
+                                    <img src="img/chen.png" alt="">
+                                </div>
+                                <span>陈奕迅</span>
+                            </div>
+                            <div class="outerbox">
+                                <div class="music-container" id="music-container4">
+                                    <!-- 音乐信息 -->
+                                    <div class="music-info">
+                                        <!-- 音乐标题 -->
+                                        <h4 id="title4"></h4>
+                                        <!-- 音乐播放进度条 -->
+                                        <div class="progress-container" id="progress-container4">
+                                            <div class="progress" id="progress4"></div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 默认第一首音乐 -->
+                                    <audio src="music/红玫瑰.mp3" id="audio4"></audio>
+
+                                    <!-- 音乐封面 -->
+                                    <div class="img-container">
+                                        <img src="img/红玫瑰.jpg" alt="music-cover" id="music-cover4">
+                                    </div>
+                                    <!-- 播放控制 -->
+                                    <div class="navigation">
+                                        <button id="prev4" class="action-btn">
+                                            <i class="fas fa-backward"></i>
+                                        </button>
+                                        <button id="play4" class="action-btn action-btn-big">
+                                            <i class="fas fa-play"></i>
+                                        </button>
+                                        <button id="next4" class="action-btn">
+                                            <i class="fas fa-forward"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="singer">
+                            <div class="head">
+                                <div class="pictures">
+                                    <img src="img/may.png" alt="">
+                                </div>
+                                <span>五月天</span>
+                            </div>
+                            <div class="outerbox">
+                                <div class="music-container" id="music-container5">
+                                    <!-- 音乐信息 -->
+                                    <div class="music-info">
+                                        <!-- 音乐标题 -->
+                                        <h4 id="title5"></h4>
+                                        <!-- 音乐播放进度条 -->
+                                        <div class="progress-container" id="progress-container5">
+                                            <div class="progress" id="progress5"></div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 默认第一首音乐 -->
+                                    <audio src="music/知足.mp3" id="audio5"></audio>
+
+                                    <!-- 音乐封面 -->
+                                    <div class="img-container">
+                                        <img src="img/知足.jpg" alt="music-cover" id="music-cover5">
+                                    </div>
+                                    <!-- 播放控制 -->
+                                    <div class="navigation">
+                                        <button id="prev5" class="action-btn">
+                                            <i class="fas fa-backward"></i>
+                                        </button>
+                                        <button id="play5" class="action-btn action-btn-big">
+                                            <i class="fas fa-play"></i>
+                                        </button>
+                                        <button id="next5" class="action-btn">
+                                            <i class="fas fa-forward"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -427,55 +283,72 @@
             <div class="rank_outer">
                 <div class="rank_inner">
                     <div class="rank_content">
-                        <div class="roles">
+                        <div class="roles1">
                             <span class="role_number">1</span>
-                            <div class="role_head"><img src="zhou.png" alt=""></div>
-                            <span class="role_name">周杰伦</span>
+                            <div class="role_head"><img src="img/wang.png" alt=""></div>
+                            <span class="role_name"><a href="https://baike.baidu.com/item/%E7%8E%8B%E8%8F%B2/11029"
+                                    target="_blank">王菲</a></span>
                         </div>
-                        <div class="roles">
+                        <div class="roles2">
                             <span class="role_number">2</span>
-                            <div class="role_head"><img src="zhou.png" alt=""></div>
-                            <span class="role_name">周杰伦</span>
+                            <div class="role_head"><img src="img/chen.png" alt=""></div>
+                            <span class="role_name"><a
+                                    href="https://baike.baidu.com/item/%E9%99%88%E5%A5%95%E8%BF%85/128029"
+                                    target="_blank">陈奕迅</a></span>
                         </div>
-                        <div class="roles">
+                        <div class="roles3">
                             <span class="role_number">3</span>
-                            <div class="role_head"><img src="zhou.png" alt=""></div>
-                            <span class="role_name">周杰伦</span>
+                            <div class="role_head"><img src="img/zhou.png" alt=""></div>
+                            <span class="role_name"><a
+                                    href="https://baike.baidu.com/item/%E5%91%A8%E6%9D%B0%E4%BC%A6/129156"
+                                    target="_blank">周杰伦</a></span>
                         </div>
                         <div class="roles">
                             <span class="role_number">4</span>
-                            <div class="role_head"><img src="zhou.png" alt=""></div>
-                            <span class="role_name">周杰伦</span>
+                            <div class="role_head"><img src="img/li.png" alt=""></div>
+                            <span class="role_name"><a
+                                    href="https://baike.baidu.com/item/%E6%9D%8E%E8%8D%A3%E6%B5%A9/3976957"
+                                    target="_blank">李荣浩</a></span>
                         </div>
                         <div class="roles">
                             <span class="role_number">5</span>
-                            <div class="role_head"><img src="zhou.png" alt=""></div>
-                            <span class="role_name">周杰伦</span>
+                            <div class="role_head"><img src="img/deng.png" alt=""></div>
+                            <span class="role_name"><a
+                                    href="https://baike.baidu.com/item/%E9%82%93%E7%B4%AB%E6%A3%8B/6798196"
+                                    target="_blank">邓紫棋</a></span>
                         </div>
                         <div class="roles">
                             <span class="role_number">6</span>
-                            <div class="role_head"><img src="zhou.png" alt=""></div>
-                            <span class="role_name">周杰伦</span>
+                            <div class="role_head"><img src="img/may.png" alt=""></div>
+                            <span class="role_name"><a
+                                    href="https://baike.baidu.com/item/%E4%BA%94%E6%9C%88%E5%A4%A9/17011"
+                                    target="_blank">五月天</a></span>
                         </div>
                         <div class="roles">
                             <span class="role_number">7</span>
-                            <div class="role_head"><img src="zhou.png" alt=""></div>
-                            <span class="role_name">周杰伦</span>
+                            <div class="role_head"><img src="img/shen.png" alt=""></div>
+                            <span class="role_name"><a href="https://baike.baidu.com/item/%E5%91%A8%E6%B7%B1/15089196"
+                                    target="_blank">周深</a></span>
                         </div>
                         <div class="roles">
                             <span class="role_number">8</span>
-                            <div class="role_head"><img src="zhou.png" alt=""></div>
-                            <span class="role_name">周杰伦</span>
+                            <div class="role_head"><img src="img/jie.png" alt=""></div>
+                            <span class="role_name"><a href="https://baike.baidu.com/item/%E5%BC%A0%E6%9D%B0/256"
+                                    target="_blank">张杰</a></span>
                         </div>
                         <div class="roles">
                             <span class="role_number">9</span>
-                            <div class="role_head"><img src="zhou.png" alt=""></div>
-                            <span class="role_name">周杰伦</span>
+                            <div class="role_head"><img src="img/cai.png" alt=""></div>
+                            <span class="role_name"><a
+                                    href="https://baike.baidu.com/item/%E8%94%A1%E4%BE%9D%E6%9E%97?fromModule=lemma_search-box"
+                                    target="_blank">蔡依林</a></span>
                         </div>
                         <div class="roles">
                             <span class="role_number">10</span>
-                            <div class="role_head"><img src="zhou.png" alt=""></div>
-                            <span class="role_name">周杰伦</span>
+                            <div class="role_head"><img src="img/lin.png" alt=""></div>
+                            <span class="role_name"><a
+                                    href="https://baike.baidu.com/item/%E6%9E%97%E4%BF%8A%E6%9D%B0/131821"
+                                    target="_blank">林俊杰</a></span>
                         </div>
                     </div>
                 </div>
@@ -485,22 +358,22 @@
                     你的常听
                 </span>
             </div>
-            <div class="roles">
-                <span class="role_number">1</span>
-                <div class="role_head"><img src="zhou.png" alt=""></div>
-                <span class="role_name">周杰伦</span>
-            </div>
-            <div class="roles">
-                <span class="role_number">2</span>
-                <div class="role_head"><img src="zhou.png" alt=""></div>
-                <span class="role_name">周杰伦</span>
-            </div>
-            <div class="roles">
-                <span class="role_number">3</span>
-                <div class="role_head"><img src="zhou.png" alt=""></div>
-                <span class="role_name">周杰伦</span>
+            <div class="box">
+                <div id="context">
+                    <div class="pic">
+                        <img src="img/夏日忧伤.png">
+                        <img src="img/光年之外.jpg">
+                        <img src="img/青花瓷.jpg">
+                        <img src="img/七里香.jpg">
+                        <img src="img/浮夸.jpg">
+                        <img src="img/红玫瑰.jpg">
+                        <img src="img/交换余生.jpg">
+                    </div>
+                </div>
             </div>
         </div>
     </main>
 </body>
+<script src="js/singer.js"></script>
+
 </html>
