@@ -1,13 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: auto;
+        }
+
+        header {
+            width: 100%;
+            height: 70px;
+            background-color: black;
+        }
+
+        .nav {
+            width: 800px;
+            height: 70px;
+        }
+
+        .first,
+        .second,
+        .third {
+            list-style: none;
+            float: left;
+            text-align: center;
+            height: 70px;
+            line-height: 70px;
+            width: 120px;
+            color: white;
+            background-color: black;
+        }
+
+        .first {
+            background-color: skyblue;
+        }
+
+        .last {
+            float: left;
+            width: 300px;
+            height: 30px;
+            margin: 20px 30px;
+        }
+
+        .box {
+            display: inline-block;
+            width: 286px;
+            height: 26px;
+            border: 2px solid skyblue;
+            margin: 0;
+        }
+
+        .login {
+            float: left;
+            width: 60px;
+            height: 30px;
+            margin: 20px 10px;
+            color: white;
+            font-size: 18px;
+            font-family: 黑体;
+            text-align: center;
+            line-height: 30px;
+            background-color: skyblue;
+        }
+
+        input {
+            float: left;
+            width: 250px;
+            height: 26px;
+            outline: none;
+            border: none;
+            font-size: 16px;
+            font-family: 黑体;
+            text-indent: 5px;
+        }
+
+        button {
+            float: left;
+            height: 26px;
+            width: 36px;
+            color: white;
+            background-color: skyblue;
+            outline: none;
+            border: none;
+        }
+
+        iframe {
+            width: 100%;
+            height: 804px;
+
+        }
+
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer {
+            width: 100%;
+            height: 120px;
+            background-color: black;
+        }
+
+        footer ul {
+            width: 800px;
+            height: 120px;
+            margin: 0 auto;
+        }
+
+        footer ul li {
+            float: left;
+            list-style: none;
+            text-align: center;
+            height: 30px;
+            line-height: 30px;
+            width: 158px;
+            color: white;
+            margin: 45px auto;
+            border-left: 2px solid white;
+        }
+
+        footer ul li:hover {
+            color: skyblue;
+        }
+
+        footer ul li.one {
+            width: 160px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <ul>
+                <li data-src="find.html" class="first">发现</li>
+                <li data-src="singer.html" class="second">歌手</li>
+                <li data-src="music.html" class="third">歌曲</li>
+            </ul>
+            <div class="last">
+                <span class="box">
+                    <input type="text" placeholder="输入你喜爱的歌曲">
+                    <button>搜索</button>
+                </span>
+            </div>
+            <div class="login">
+                登录
+            </div>
+        </div>
+    </header>
+    <iframe src="find.html" frameborder="0" id="iframe" scrolling="no"></iframe>
+    <footer>
+        <ul>
+            <li class="one">联系我们</li>
+            <li>版权所有</li>
+            <li>隐私政策</li>
+            <li>服务条款</li>
+            <li>权益申诉</li>
+        </ul>
+    </footer>
+</body>
+<script>
+    const b1 = document.querySelector('.first')
+    const b2 = document.querySelector('.second')
+    const b3 = document.querySelector('.third')
+    let iframe = document.querySelector('#iframe')
+    //获取导航栏按钮
+    let lis = document.querySelectorAll('li')
+    //点击导航栏，改变Iframe的src属性，实现页面切换
+    for (let i = 0; i < lis.length; i++) {
+        //绑定点击事件
+        lis[i].onclick = function (event) {
+            iframe.src = event.target.dataset.src
+
+        }
+
+    }
+
+    b1.addEventListener('click', () => {
+        b1.style.backgroundColor = 'skyblue';
+        b2.style.backgroundColor = 'black';
+        b3.style.backgroundColor = 'black';
+    })
+    b2.addEventListener('click', () => {
+        b1.style.backgroundColor = 'black';
+        b2.style.backgroundColor = 'skyblue';
+        b3.style.backgroundColor = 'black';
+    })
+    b3.addEventListener('click', () => {
+        b1.style.backgroundColor = 'black';
+        b2.style.backgroundColor = 'black';
+        b3.style.backgroundColor = 'skyblue';
+    })
+</script>
+
+<script type="module" src="/src/main.js"></script>
 </html>

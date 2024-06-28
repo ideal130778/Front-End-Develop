@@ -1,0 +1,171 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+.box {
+    width: 800px;
+    height: 400px;
+    zoom: 1;
+}
+
+.box:after {
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+#contex {
+    width: 800px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+   
+}
+
+.pictures {
+    width: 20000px;
+    height: 400px;
+    transition: all 0s;
+    zoom: 1;
+}
+
+.pictures:after {
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+img {
+    width: 800px;
+    height: 400px;
+    float: left;
+    display: block;
+}
+.main {
+    overflow: hidden;
+    position: relative;
+}
+
+.main-title {
+    position: relative;
+    width: 490px;
+    height: 46px;
+    padding-top: 80px;
+    margin: 0 auto 50px;
+}
+
+
+
+
+
+
+.main-slider .slider-wrapper {
+    position: relative;
+    left: 10px;
+    height: 314px;
+    margin-bottom: 35px;
+}
+
+.slider-wrapper li {
+    float: left;
+    width: 150px;
+    height: 200px;
+}
+
+.slider-wrapper .img {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+}
+
+.main .img img,
+.main .img i,
+.main .mask,
+.main .icon-play {
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+}
+
+.main .img:hover img {
+    transform: scale(1.07);
+    -webkit-transform: scale(1.07);
+}
+
+
+.slider-wrapper .info {
+    width: 100%;
+    height: 114px;
+    background-color: rgba(130, 138, 242, 0.8);
+    text-align: center;
+    font-size: 16px;
+}
+
+.slider-wrapper .info-event .info {
+    background-color: rgba(234, 129, 129, 0.6);
+}
+
+.slider-wrapper li:hover .info {
+    background-color: skyblue ;
+}
+
+.slider-wrapper .info .title {
+    padding-top: 34px;
+}
+
+img {
+    vertical-align: top;
+}
+
+
+.main-inner{
+    width: 800px;
+    height: 400px;
+}
+
+#newSong .main-slider .slider-wrapper {
+    width: 4500px;
+}
+
+.title {
+    font-size: 20px;
+    margin-top: -15px;
+    margin-bottom: 10px;
+
+}
+.main-slider.tab-cont{
+    height: 414px;
+    width: 1270px;
+}
+.main-title{
+    height: 02px;
+    width: 12px;
+}
+.main-slider .slider-wrapper li .img img {
+    width: 150px; 
+    height: 150px; 
+}
+.slider-wrapper {
+    width: 800px; 
+    height: 400px;
+}
+#newSong {
+    height: 400px;
+    width: 1000px;
+    background-image: url('../img/newSong_bg.jpg'); 
+    background-size: cover;
+    background-position: center; 
+}
+
+body {
+    background-image: url('../img/newSong_bg.jpg');
+    background-size: cover; 
+    background-position: center; 
+}

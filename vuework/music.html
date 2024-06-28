@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <title>Music</title>
+      <meta name="keywords" content="Music">
+      <meta name="description" content="Used for NanKai Front End Develop assignment">
+      <meta name="author" content="Andy Lee">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+   </head>
+   <body>
+      <div class="outer">
+        <div class="inner">
+            <div class="content">
+                <div class="control" id="prev">
+                    <img src="img/左按钮.png" alt="左按钮" width="40" height="40">
+                </div>
+                <div class="control" id="next">
+                    <img src="img/右按钮.png" alt="右按钮" width="40" height="40">
+                </div>
+                <div class="container">
+                    <h1 style="font-weight: bold;font-size: 30px;">新歌首发</h1>
+                    <div class="category-titles">
+                        <div class="category-title active" data-index="0">内地</div>
+                        <div class="category-title" data-index="1">港台</div>
+                        <div class="category-title" data-index="2">欧美</div>
+                        <div class="category-title" data-index="3">日本</div>
+                    </div>
+                    <div class="slider-container">
+                        <div class="slider" id="slider">
+                            <div class="slide__list">
+                                <ul class="debutlist__list">
+                                    <li class="debutlist__item">
+                                        <div class="debutlist__item_box">
+                                            <a class="debutlist__link mod_cover">
+                                                <img class="debutlist__pic" alt="木偶人" src="img/木偶人.png">
+                                                <i class="mod_cover__mask"></i>
+                                                <img class="playButton" data-index="3" src="img/播放按钮2.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                            </a>
+                                            <div class="debutlist__cont">
+                                                <p class="debutlist__song">木偶人</p>
+                                                <p class="debutlist__singer">薛之谦</p>
+                
+                                            </div>
+                                            <div class="debutlist__time">04：46</div>
+                                        </div>
+                                    </li>
+                                    <li class="debutlist__item">
+                                        <div class="debutlist__item_box">
+                                            <a class="debutlist__link mod_cover">
+                                                <img class="debutlist__pic" alt="下潜" src="img/下潜.jpg">
+                                                <i class="mod_cover__mask"></i>
+                                                <img class="playButton" data-index="23" src="img/播放按钮2.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                            </a>
+                                            <div class="debutlist__cont">
+                                                <p class="debutlist__song">下潜</p>
+                                                <p class="debutlist__singer">川青</p>
+                
+                                            </div>
+                                            <div class="debutlist__time">03：47</div>
+                                        </div>
+                                    </li>
+                                    <li class="debutlist__item">
+                                        <div class="debutlist__item_box">
+                                            <a class="debutlist__link mod_cover">
+                                                <img class="debutlist__pic" alt="夜曲" src="img/夜曲.jpg">
+                                                <i class="mod_cover__mask"></i>
+                                                <img class="playButton" data-index="24" src="img/播放按钮2.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                            </a>
+                                            <div class="debutlist__cont">
+                                                <p class="debutlist__song">夜曲</p>
+                                                <p class="debutlist__singer">周杰伦</p>
+                
+                                            </div>
+                                            <div class="debutlist__time">03：52</div>
+                                        </div>
+                                    </li>
+                                    <li class="debutlist__item">
+                                        <div class="debutlist__item_box">
+                                            <a class="debutlist__link mod_cover">
+                                                <img class="debutlist__pic" alt="消愁" src="img/消愁.jpg">
+                                                <i class="mod_cover__mask"></i>
+                                                <img class="playButton" data-index="25" src="img/播放按钮2.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                            </a>
+                                            <div class="debutlist__cont">
+                                                <p class="debutlist__song">消愁</p>
+                                                <p class="debutlist__singer">毛不易</p>
+                
+                                            </div>
+                                            <div class="debutlist__time">04：21</div>
+                                        </div>
+                                    </li>
+                                    <li class="debutlist__item">
+                                        <div class="debutlist__item_box">
+                                            <a class="debutlist__link mod_cover">
+                                                <img class="debutlist__pic" alt="稻香" src="img/稻香.jpg">
+                                                <i class="mod_cover__mask"></i>
+                                                <img class="playButton" data-index="0" src="img/播放按钮2.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                            </a>
+                                            <div class="debutlist__cont">
+                                                <p class="debutlist__song">稻香</p>
+                                                <p class="debutlist__singer">周杰伦</p>
+                
+                                            </div>
+                                            <div class="debutlist__time">02:58</div>
+                                        </div>
+                                    </li>
+                                    <li class="debutlist__item">
+                                        <div class="debutlist__item_box">
+                                            <a class="debutlist__link mod_cover">
+                                                <img class="debutlist__pic" alt="晴天" src="img/晴天.jpg">
+                                                <i class="mod_cover__mask"></i>
+                                                <img class="playButton" data-index="26" src="img/播放按钮2.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                            </a>
+                                            <div class="debutlist__cont">
+                                                <p class="debutlist__song">晴天</p>
+                                                <p class="debutlist__singer">周杰伦</p>
+                
+                                            </div>
+                                            <div class="debutlist__time">02:58</div>
+                                        </div>
+                                    </li>
+                                    <li class="debutlist__item">
+                                        <div class="debutlist__item_box">
+                                            <a class="debutlist__link mod_cover">
+                                                <img class="debutlist__pic" alt="泡沫" src="img/泡沫.jpg">
+                                                <i class="mod_cover__mask"></i>
+                                                <img class="playButton" data-index="27" src="img/播放按钮2.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                            </a>
+                                            <div class="debutlist__cont">
+                                                <p class="debutlist__song">泡沫</p>
+                                                <p class="debutlist__singer">邓紫棋</p>
+                
+                                            </div>
+                                            <div class="debutlist__time">02:58</div>
+                                        </div>
+                                    </li>
+                                    <li class="debutlist__item">
+                                        <div class="debutlist__item_box">
+                                            <a class="debutlist__link mod_cover">
+                                                <img class="debutlist__pic" alt="发如雪" src="img/发如雪.jpg">
+                                                <i class="mod_cover__mask"></i>
+                                                <img class="playButton" data-index="28" src="img/播放按钮2.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                            </a>
+                                            <div class="debutlist__cont">
+                                                <p class="debutlist__song">发如雪</p>
+                                                <p class="debutlist__singer">周杰伦</p>
+                
+                                            </div>
+                                            <div class="debutlist__time">02:58</div>
+                                        </div>
+                                    </li>
+                                    <li class="debutlist__item">
+                                        <div class="debutlist__item_box">
+                                            <a class="debutlist__link mod_cover">
+                                                <img class="debutlist__pic" alt="像我这样的人" src="img/像我这样的人.jpg">
+                                                <i class="mod_cover__mask"></i>
+                                                <img class="playButton" data-index="4" src="img/播放按钮2.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                            </a>
+                                            <div class="debutlist__cont">
+                                                <p class="debutlist__song">像我这样的人</p>
+                                                <p class="debutlist__singer">毛不易</p>
+                
+                                            </div>
+                                            <div class="debutlist__time">02:58</div>
+                                        </div>
+                                    </li>
+                
+                                </ul>
+                                <ul class="debutlist__list">
+                                    <li class="debutlist__item">
+                                        <div class="debutlist__item_box">
+                                            <a class="debutlist__link mod_cover">
+                                                <img class="debutlist__pic" alt="听海" src="img/听海.jpg">
+                                                <i class="mod_cover__mask"></i>
+                                                <img class="playButton" data-index="29" src="img/播放按钮2.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                            </a>
+                                            <div class="debutlist__cont">
+                                                <p class="debutlist__song">听海</p>
+                                                <p class="debutlist__singer">张惠妹</p>
+                
+                                            </div>
+                                            <div class="debutlist__time">04：46</div>
+                                        </div>
+                                    </li>
+                                    <li class="debutlist__item">
+                                        <div class="debutlist__item_box">
+                                            <a class="debutlist__link mod_cover">
+                                                <img class="debutlist__pic" alt="微光" src="img/微光.jpg">
+                                                <i class="mod_cover__mask"></i>
+                                                <img class="playButton" data-index="30" src="img/播放按钮2.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                            </a>
+                                            <div class="debutlist__cont">
+                                                <p class="debutlist__song">微光</p>
+                                                <p class="debutlist__singer">梁静茹</p>
+                
+                                            </div>
+                                            <div class="debutlist__time">03：47</div>
+                                        </div>
+                                    </li>
+                                    <li class="debutlist__item">
+                                        <div class="debutlist__item_box">
+                                            <a class="debutlist__link mod_cover">
+                                                <img class="debutlist__pic" alt="忘情水" src="img/忘情水.jpg">
+                                                <i class="mod_cover__mask"></i>
+                                                <img class="playButton" data-index="31" src="img/播放按钮2.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                            </a>
+                                            <div class="debutlist__cont">
+                                                <p class="debutlist__song">忘情水</p>
+                                                <p class="debutlist__singer">刘德华</p>
+                
+                                            </div>
+                                            <div class="debutlist__time">03：52</div>
+                                        </div>
+                                    </li>
+                                    <li class="debutlist__item">
+                                        <div class="debutlist__item_box">
+                                            <a class="debutlist__link mod_cover">
+                                                <img class="debutlist__pic" alt="倩女幽魂" src="img/倩女幽魂.jpg">
+                                                <i class="mod_cover__mask"></i>
+                                                <img class="playButton" data-index="32" src="img/播放按钮2.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                            </a>
+                                            <div class="debutlist__cont">
+                                                <p class="debutlist__song">倩女幽魂</p>
+                                                <p class="debutlist__singer">张国荣</p>
+                
+                                            </div>
+                                            <div class="debutlist__time">04：21</div>
+                                        </div>
+                                    </li>
+                                    <li class="debutlist__item">
+                                        <div class="debutlist__item_box">
+                                            <a class="debutlist__link mod_cover">
+                                                <img class="debutlist__pic" alt="信仰" src="img/信仰.jpg">
+                                                <i class="mod_cover__mask"></i>
+                                                <img class="playButton" data-index="33" src="img/播放按钮2.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                            </a>
+                                            <div class="debutlist__cont">
+                                                <p class="debutlist__song">信仰</p>
+                                                <p class="debutlist__singer">张信哲</p>
+                
+                                            </div>
+                                            <div class="debutlist__time">02:58</div>
+                                        </div>
+                                    </li>
+                                    <li class="debutlist__item">
+                                        <div class="debutlist__item_box">
+                                            <a class="debutlist__link mod_cover">
+                                                <img class="debutlist__pic" alt="当爱已成往事" src="img/当爱已成往事.jpg">
+                                                <i class="mod_cover__mask"></i>
+                                                <img class="playButton" data-index="34" src="img/播放按钮2.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                            </a>
+                                            <div class="debutlist__cont">
+                                                <p class="debutlist__song">当爱已成往事</p>
+                                                <p class="debutlist__singer">张国荣</p>
+                
+                                            </div>
+                                            <div class="debutlist__time">02:58</div>
+                                        </div>
+                                    </li>
+                                    <li class="debutlist__item">
+                                        <div class="debutlist__item_box">
+                                            <a class="debutlist__link mod_cover">
+                                                <img class="debutlist__pic" alt="特别的爱给特别的你" src="img/特别的爱给特别的你.jpg">
+                                                <i class="mod_cover__mask"></i>
+                                                <img class="playButton" data-index="35" src="img/播放按钮2.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                            </a>
+                                            <div class="debutlist__cont">
+                                                <p class="debutlist__song">特别的爱给特别的你</p>
+                                                <p class="debutlist__singer">伍思凯</p>
+                
+                                            </div>
+                                            <div class="debutlist__time">02:58</div>
+                                        </div>
+                                    </li>
+                                    <li class="debutlist__item">
+                                        <div class="debutlist__item_box">
+                                            <a class="debutlist__link mod_cover">
+                                                <img class="debutlist__pic" alt="最熟悉的陌生人" src="img/最熟悉的陌生人.jpg">
+                                                <i class="mod_cover__mask"></i>
+                                                <img class="playButton" data-index="36" src="img/播放按钮2.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                            </a>
+                                            <div class="debutlist__cont">
+                                                <p class="debutlist__song">最熟悉的陌生人</p>
+                                                <p class="debutlist__singer">萧亚轩</p>
+                
+                                            </div>
+                                            <div class="debutlist__time">02:58</div>
+                                        </div>
+                                    </li>
+                                    <li class="debutlist__item">
+                                        <div class="debutlist__item_box">
+                                            <a class="debutlist__link mod_cover">
+                                                <img class="debutlist__pic" alt="爱就一个字" src="img/爱就一个字.jpg">
+                                                <i class="mod_cover__mask"></i>
+                                                <img class="playButton" data-index="37" src="img/播放按钮2.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                            </a>
+                                            <div class="debutlist__cont">
+                                                <p class="debutlist__song">爱就一个字</p>
+                                                <p class="debutlist__singer">张信哲</p>
+                
+                                            </div>
+                                            <div class="debutlist__time">02:58</div>
+                                        </div>
+                                    </li>
+                
+                                </ul>
+                                <ul class="debutlist__list">
+                                    <li class="debutlist__item">
+                                        <div class="debutlist__item_box">
+                                            <a class="debutlist__link mod_cover">
+                                                <img class="debutlist__pic" alt="Love Story" src="img/Love Story.jpg">
+                                                <i class="mod_cover__mask"></i>
+                                                <img class="playButton" data-index="9" src="img/播放按钮2.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                            </a>
+                                            <div class="debutlist__cont">
+                                                <p class="debutlist__song">Love Story</p>
+                                                <p class="debutlist__singer">Taylor Swift</p>
+                
+                                            </div>
+                                            <div class="debutlist__time">04：46</div>
+                                        </div>
+                                    </li>
+                                    <li class="debutlist__item">
+                                        <div class="debutlist__item_box">
+                                            <a class="debutlist__link mod_cover">
+                                                <img class="debutlist__pic" alt="whataya Want from Me"
+                                                    src="img/whataya Want from Me.jpg">
+                                                <i class="mod_cover__mask"></i>
+                                                <img class="playButton" data-index="8" src="img/播放按钮2.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                            </a>
+                                            <div class="debutlist__cont">
+                                                <p class="debutlist__song">whataya Want from Me</p>
+                                                <p class="debutlist__singer">Adam Lambert</p>
+                
+                                            </div>
+                                            <div class="debutlist__time">03：47</div>
+                                        </div>
+                                    </li>
+                                    <li class="debutlist__item">
+                                        <div class="debutlist__item_box">
+                                            <a class="debutlist__link mod_cover">
+                                                <img class="debutlist__pic" alt="Monsters" src="img/Monsters.jpg">
+                                                <i class="mod_cover__mask"></i>
+                                                <img class="playButton" data-index="12" src="img/播放按钮2.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                            </a>
+                                            <div class="debutlist__cont">
+                                                <p class="debutlist__song">Monsters</p>
+                                                <p class="debutlist__singer">Katie Sky</p>
+                
+                                            </div>
+                                            <div class="debutlist__time">03：52</div>
+                                        </div>
+                                    </li>
+                                    <li class="debutlist__item">
+                                        <div class="debutlist__item_box">
+                                            <a class="debutlist__link mod_cover">
+                                                <img class="debutlist__pic" alt="payphone" src="img/payphone.png">
+                                                <i class="mod_cover__mask"></i>
+                                                <img class="playButton" data-index="10" src="img/播放按钮2.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                            </a>
+                                            <div class="debutlist__cont">
+                                                <p class="debutlist__song">payphone</p>
+                                                <p class="debutlist__singer">Maroon 5</p>
+                
+                                            </div>
+                                            <div class="debutlist__time">04：21</div>
+                                        </div>
+                                    </li>
+                                    <li class="debutlist__item">
+                                        <div class="debutlist__item_box">
+                                            <a class="debutlist__link mod_cover">
+                                                <img class="debutlist__pic" alt="wolves" src="img/wolves.jpg">
+                                                <i class="mod_cover__mask"></i>
+                                                <img class="playButton" data-index="11" src="img/播放按钮2.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                            </a>
+                                            <div class="debutlist__cont">
+                                                <p class="debutlist__song">wolves</p>
+                                                <p class="debutlist__singer">Selena Gomez / Marshmello</p>
+                
+                                            </div>
+                                            <div class="debutlist__time">02:58</div>
+                                        </div>
+                                    </li>
+                                    <li class="debutlist__item">
+                                        <div class="debutlist__item_box">
+                                            <a class="debutlist__link mod_cover">
+                                                <img class="debutlist__pic" alt="Counting Stars" src="img/Counting Stars.jpg">
+                                                <i class="mod_cover__mask"></i>
+                                                <img class="playButton" data-index="14" src="img/播放按钮2.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                            </a>
+                                            <div class="debutlist__cont">
+                                                <p class="debutlist__song">Counting Stars</p>
+                                                <p class="debutlist__singer">OneRepublic</p>
+                
+                                            </div>
+                                            <div class="debutlist__time">02:58</div>
+                                        </div>
+                                    </li>
+                                    <li class="debutlist__item">
+                                        <div class="debutlist__item_box">
+                                            <a class="debutlist__link mod_cover">
+                                                <img class="debutlist__pic" alt="Welcome To New York"
+                                                    src="img/Welcome To New York.jpg">
+                                                <i class="mod_cover__mask"></i>
+                                                <img class="playButton" data-index="15" src="img/播放按钮2.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                            </a>
+                                            <div class="debutlist__cont">
+                                                <p class="debutlist__song">Welcome To New York</p>
+                                                <p class="debutlist__singer">Taylor Swift</p>
+                
+                                            </div>
+                                            <div class="debutlist__time">02:58</div>
+                                        </div>
+                                    </li>
+                                    <li class="debutlist__item">
+                                        <div class="debutlist__item_box">
+                                            <a class="debutlist__link mod_cover">
+                                                <img class="debutlist__pic" alt="Brainiac Maniac" src="img/Brainiac Maniac.jpg">
+                                                <i class="mod_cover__mask"></i>
+                                                <img class="playButton" data-index="38" src="img/播放按钮2.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                            </a>
+                                            <div class="debutlist__cont">
+                                                <p class="debutlist__song">Brainiac Maniac</p>
+                                                <p class="debutlist__singer">Laura Shigihara</p>
+                
+                                            </div>
+                                            <div class="debutlist__time">01:55</div>
+                                        </div>
+                                    </li>
+                                    <li class="debutlist__item">
+                                        <div class="debutlist__item_box">
+                                            <a class="debutlist__link mod_cover">
+                                                <img class="debutlist__pic" alt="Flower of the North"
+                                                    src="img/Flower of the North.jpg">
+                                                <i class="mod_cover__mask"></i>
+                                                <img class="playButton" data-index="13" src="img/播放按钮2.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                            </a>
+                                            <div class="debutlist__cont">
+                                                <p class="debutlist__song">Flower of the North</p>
+                                                <p class="debutlist__singer">Killigrew</p>
+                
+                                            </div>
+                                            <div class="debutlist__time">02:58</div>
+                                        </div>
+                                    </li>
+                
+                                </ul>
+                                <ul class="debutlist__list">
+                                    <li class="debutlist__item">
+                                        <div class="debutlist__item_box">
+                                            <a class="debutlist__link mod_cover">
+                                                <img class="debutlist__pic" alt="千本桜" src="img/千本桜.jpg">
+                                                <i class="mod_cover__mask"></i>
+                                                <img class="playButton" data-index="16" src="img/播放按钮2.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                            </a>
+                                            <div class="debutlist__cont">
+                                                <p class="debutlist__song">千本桜</p>
+                                                <p class="debutlist__singer">黒うさP / 初音ミク</p>
+                
+                                            </div>
+                                            <div class="debutlist__time">04：46</div>
+                                        </div>
+                                    </li>
+                                    <li class="debutlist__item">
+                                        <div class="debutlist__item_box">
+                                            <a class="debutlist__link mod_cover">
+                                                <img class="debutlist__pic" alt="胸がドキドキ" src="img/胸がドキドキ.jpg">
+                                                <i class="mod_cover__mask"></i>
+                                                <img class="playButton" data-index="17" src="img/播放按钮2.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                            </a>
+                                            <div class="debutlist__cont">
+                                                <p class="debutlist__song">胸がドキドキ</p>
+                                                <p class="debutlist__singer">↑THE HIGH-LOWS↓</p>
+                
+                                            </div>
+                                            <div class="debutlist__time">03：47</div>
+                                        </div>
+                                    </li>
+                                    <li class="debutlist__item">
+                                        <div class="debutlist__item_box">
+                                            <a class="debutlist__link mod_cover">
+                                                <img class="debutlist__pic" alt="Mobius" src="img/Mobius.jpg">
+                                                <i class="mod_cover__mask"></i>
+                                                <img class="playButton" data-index="18" src="img/播放按钮2.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                            </a>
+                                            <div class="debutlist__cont">
+                                                <p class="debutlist__song">Mobius</p>
+                                                <p class="debutlist__singer">澤野弘之 / mpi / Laco / Benjamin</p>
+                
+                                            </div>
+                                            <div class="debutlist__time">03：52</div>
+                                        </div>
+                                    </li>
+                                    <li class="debutlist__item">
+                                        <div class="debutlist__item_box">
+                                            <a class="debutlist__link mod_cover">
+                                                <img class="debutlist__pic" alt="βios" src="img/βios.jpg">
+                                                <i class="mod_cover__mask"></i>
+                                                <img class="playButton" data-index="19" src="img/播放按钮2.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                            </a>
+                                            <div class="debutlist__cont">
+                                                <p class="debutlist__song">βios</p>
+                                                <p class="debutlist__singer">澤野弘之</p>
+                
+                                            </div>
+                                            <div class="debutlist__time">04：21</div>
+                                        </div>
+                                    </li>
+                                    <li class="debutlist__item">
+                                        <div class="debutlist__item_box">
+                                            <a class="debutlist__link mod_cover">
+                                                <img class="debutlist__pic" alt="怪物" src="img/怪物.jpg">
+                                                <i class="mod_cover__mask"></i>
+                                                <img class="playButton" data-index="20" src="img/播放按钮2.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                            </a>
+                                            <div class="debutlist__cont">
+                                                <p class="debutlist__song">怪物</p>
+                                                <p class="debutlist__singer">YOASOBI</p>
+                
+                                            </div>
+                                            <div class="debutlist__time">02:58</div>
+                                        </div>
+                                    </li>
+                                    <li class="debutlist__item">
+                                        <div class="debutlist__item_box">
+                                            <a class="debutlist__link mod_cover">
+                                                <img class="debutlist__pic" alt="名前のない怪物(Instrumental)"
+                                                    src="img/名前のない怪物(Instrumental).jpg">
+                                                <i class="mod_cover__mask"></i>
+                                                <img class="playButton" data-index="21" src="img/播放按钮2.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                            </a>
+                                            <div class="debutlist__cont">
+                                                <p class="debutlist__song">名前のない怪物(Instrumental)</p>
+                                                <p class="debutlist__singer">EGOIST</p>
+                
+                                            </div>
+                                            <div class="debutlist__time">02:58</div>
+                                        </div>
+                                    </li>
+                                    <li class="debutlist__item">
+                                        <div class="debutlist__item_box">
+                                            <a class="debutlist__link mod_cover">
+                                                <img class="debutlist__pic" alt="Avid" src="img/Avid.jpg">
+                                                <i class="mod_cover__mask"></i>
+                                                <img class="playButton" data-index="22" src="img/播放按钮2.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                            </a>
+                                            <div class="debutlist__cont">
+                                                <p class="debutlist__song">Avid</p>
+                                                <p class="debutlist__singer">SawanoHiroyuki[nZk] / 瑞葵(mizuki)</p>
+                
+                                            </div>
+                                            <div class="debutlist__time">02:58</div>
+                                        </div>
+                                    </li>
+                                    <li class="debutlist__item">
+                                        <div class="debutlist__item_box">
+                                            <a class="debutlist__link mod_cover">
+                                                <img class="debutlist__pic" alt="Tracer" src="img/Tracer.jpg">
+                                                <i class="mod_cover__mask"></i>
+                                                <img class="playButton" data-index="40" src="img/播放按钮2.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                            </a>
+                                            <div class="debutlist__cont">
+                                                <p class="debutlist__song">Tracer</p>
+                                                <p class="debutlist__singer">Benjamin</p>
+                                            </div>
+                                            <div class="debutlist__time">02:58</div>
+                                        </div>
+                                    </li>
+                                    <li class="debutlist__item">
+                                        <div class="debutlist__item_box">
+                                            <a class="debutlist__link mod_cover">
+                                                <img class="debutlist__pic" alt="Relentless" src="img/Relentless.jpg">
+                                                <i class="mod_cover__mask"></i>
+                                                <img class="playButton" data-index="39" src="img/播放按钮2.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                            </a>
+                                            <div class="debutlist__cont">
+                                                <p class="debutlist__song">Relentless</p>
+                                                <p class="debutlist__singer">Cre-sc3NT</p>
+                
+                                            </div>
+                                            <div class="debutlist__time">02:58</div>
+                                        </div>
+                                    </li>
+                
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news_section_2">
+                    <div class="container">
+                        <div class="down_arrow"><img src="img/down-arrow.png"></div>
+                        <div id="my_slider" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-sm-6">
+                                            <div class="images_main">
+                                                <div class="image_1"><img src="img/payphone.png" class="image_1"></div>
+                                                <div class="play-button" data-index="0"></div>
+                                                <div class="text_main">
+                                                    <h2 class="business_text">Payphone</h2>
+                                                    <p class="date_text">01/03/2019</p>
+                                                </div>
+                
+                                                <p class="ipsum_text">《Payphone》这首歌曲作为给魔力红的一位粉丝Nguyen Quynh Mai的生日礼物而被创作了出来。
+                                                </p>
+                                                <div class="seemor_bt_1"><a href="#">See More</a></div>
+                                            </div>
+                                        </div>
+                
+                                        <div class="col-lg-3 col-sm-6">
+                                            <div class="images_main">
+                                                <div class="image_1"><img src="img/像我这样的人.jpg" class="image_1"></div>
+                                                <div class="play-button" data-index="1"></div>
+                                                <div class="text_main">
+                                                    <h2 class="business_text">像我这样的人</h2>
+                                                    <p class="date_text">01/03/2019</p>
+                                                </div>
+                                                <p class="ipsum_text">《像我这样的人》是首由毛不易作词、作曲并演唱的歌曲，该曲于2017年8月5日在《明日之子第一季》第8期首唱
+                                                    [1]，现场版本收录在毛不易2017年9月1日发行的专辑《巨星不易工作室 No.1》中 </p>
+                                                <div class="seemor_bt_1"><a href="#">See More</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-6">
+                                            <div class="images_main">
+                                                <div class="image_1"><img src="img/最伟大的作品.jpg" class="image_1"></div>
+                                                <div class="play-button" data-index="2"></div>
+                                                <div class="text_main">
+                                                    <h2 class="business_text">最伟大的作品</h2>
+                                                    <p class="date_text">01/03/2019</p>
+                                                </div>
+                                                <p class="ipsum_text">
+                                                    《最伟大的作品》是周杰伦的第15张音乐专辑，由周杰伦担任制作人，共收录12首歌曲，同名先行曲《最伟大的作品》于2022年7月6日中午12点首播
+                                                    [2]，7月8日在QQ音乐、咪咕音乐等平台开启预售 [10]，完整专辑于2022年7月14日21点30分正式发布</p>
+                                                <div class="seemor_bt_1"><a href="#">See More</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-6">
+                                            <div class="images_main">
+                                                <div class="image_1"><img src="img/木偶人.png" class="image_1"></div>
+                                                <div class="play-button" data-index="3"></div>
+                                                <div class="text_main">
+                                                    <h2 class="business_text">木偶人</h2>
+                                                    <p class="date_text">01/03/2019</p>
+                                                </div>
+                                                <p class="ipsum_text">木偶人》是薛之谦演唱的歌曲，由薛之谦创作词曲，收录于薛之谦2019年发行的音乐专辑《尘》。</p>
+                                                <div class="seemor_bt_1"><a href="#">See More</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-sm-6">
+                                            <div class="images_main">
+                                                <div class="image_1"><img src="img/反方向的钟.jpg" class="image_1"></div>
+                                                <div class="play-button" data-index="4"></div>
+                                                <div class="text_main">
+                                                    <h2 class="business_text">反方向的钟</h2>
+                                                    <p class="date_text">01/03/2019</p>
+                                                </div>
+                                                <p class="ipsum_text">
+                                                    《反方向的钟》是周杰伦演唱的歌曲，由方文山作词，周杰伦作曲、编曲，收录在周杰伦2000年11月7日发行的专辑《Jay》中。该曲是日本电视剧《魔影紫光》的普通话译制版片头曲。
+                                                </p>
+                                                <div class="seemor_bt_1"><a href="#">See More</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-6">
+                                            <div class="images_main">
+                                                <div class="image_1"><img src="img/Love Story.jpg" class="image_1"></div>
+                                                <div class="play-button" data-index="5"></div>
+                                                <div class="text_main">
+                                                    <h2 class="business_text">Love Story</h2>
+                                                    <p class="date_text">01/03/2019</p>
+                                                </div>
+                                                <p class="ipsum_text">《Love
+                                                    Story》是泰勒·斯威夫特演唱的乡村流行歌曲，由泰勒·斯威夫特创作，由泰勒·斯威夫特、内森·查普曼制作。该曲收录于泰勒·斯威夫特的第二张录音室专辑《Fearless》中，并作为推广专辑的首支单曲于2008年9月12日通过大机器唱片公司发行
+                                                    [1]。</p>
+                                                <div class="seemor_bt_1"><a href="#">See More</a></div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-lg-3 col-sm-6">
+                                            <div class="images_main">
+                                                <div class="image_1"><img src="img/whataya Want from Me.jpg" class="image_1"></div>
+                                                <div class="play-button" data-index="6"></div>
+                                                <div class="text_main">
+                                                    <h2 class="business_text">whataya Want from Me</h2>
+                                                    <p class="date_text">01/03/2019</p>
+                                                </div>
+                                                <p class="ipsum_text">Whataya Want From
+                                                    Me》是由美国歌手亚当·兰伯特演唱的歌曲，由P!nk作词、马克斯·马丁和史奇·雷克斯、P!nk共同作曲，收录在亚当·兰伯特的专辑《For Your
+                                                    Entertainment》中</p>
+                                                <div class="seemor_bt_1"><a href="#">See More</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-6">
+                                            <div class="images_main">
+                                                <div class="image_1"><img src="img/句号2.jpg" class="image_1"></div>
+                                                <div class="play-button" data-index="7"></div>
+                                                <div class="text_main">
+                                                    <h2 class="business_text">句号</h2>
+                                                    <p class="date_text">01/03/2019</p>
+                                                </div>
+                                                <p class="ipsum_text">《句号》是邓紫棋演唱的歌曲，由邓紫棋创作词曲，收录于邓紫棋2019年发行的音乐专辑《摩天动物园》 [1]。</p>
+                                                <div class="seemor_bt_1"><a href="#">See More</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                            </div>
+                            <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="n-bill">
+                    <div class="n-bilst" id="top-flag">
+                        <div style="display: inline-block; vertical-align: top; width: 33%;">
+                            <dl class="blk">
+                                <dt class="top">
+                                    <div class="j-img-container">
+                                        <div class="cver u-cover u-cover-4">
+                                            <img class="j-img"
+                                                data-src="http://p4.music.126.net/pcYHpMkdC69VVvWiynNklA==/109951166952713766.jpg?param=100y100"
+                                                src="http://p4.music.126.net/pcYHpMkdC69VVvWiynNklA==/109951166952713766.jpg?param=100y100">
+                                        </div>
+                                        <div class="tit">
+                                            <p>飙升榜</p>
+                                        </div>
+                                    </div>
+                                </dt>
+                                <dd>
+                                    <ol>
+                                        <li onmouseover="this.className='z-hvr'" onmouseout="this.className=''">
+                                            <span class="no no-top">1</span>
+                                            <a href="/song?id=2107560170" class="nm s-fc0 f-thide" title="稻香">稻香</a>
+                                            <div class="oper">
+                                                <img class="playButton" data-index="0" src="img/播放按钮.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                                <img class="heartImage" src="img/爱心未收藏.png" alt="收藏"
+                                                    style="width: 20px; height: 20px;">
+                                            </div>
+                                        </li>
+                                        <li onmouseover="this.className='z-hvr'" onmouseout="this.className=''">
+                                            <span class="no no-top">2</span>
+                                            <a href="/song?id=2156224584" class="nm s-fc0 f-thide" title="红尘客栈">红尘客栈</a>
+                                            <div class="oper">
+                                                <img class="playButton" data-index="1" src="img/播放按钮.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                                <img class="heartImage" src="img/爱心未收藏.png" alt="收藏"
+                                                    style="width: 20px; height: 20px;">
+                                            </div>
+                                        </li>
+                                        <li onmouseover="this.className='z-hvr'" onmouseout="this.className=''">
+                                            <span class="no no-top">3</span>
+                                            <a href="/song?id=2154148199" class="nm s-fc0 f-thide" title="调查中">调查中</a>
+                                            <div class="oper">
+                                                <img class="playButton" data-index="2" src="img/播放按钮.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                                <img class="heartImage" src="img/爱心未收藏.png" alt="收藏"
+                                                    style="width: 20px; height: 20px;">
+                                            </div>
+                                        </li>
+                                        <li onmouseover="this.className='z-hvr'" onmouseout="this.className=''">
+                                            <span class="no no-top">4</span>
+                                            <a href="/song?id=2107560170" class="nm s-fc0 f-thide" title="木偶人">木偶人</a>
+                                            <div class="oper">
+                                                <img class="playButton" data-index="3" src="img/播放按钮.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                                <img class="heartImage" src="img/爱心未收藏.png" alt="收藏"
+                                                    style="width: 20px; height: 20px;">
+                                            </div>
+                                        </li>
+                                        <li onmouseover="this.className='z-hvr'" onmouseout="this.className=''">
+                                            <span class="no no-top">5</span>
+                                            <a href="/song?id=2107560170" class="nm s-fc0 f-thide" title="像我这样的人">像我这样的人</a>
+                                            <div class="oper">
+                                                <img class="playButton" data-index="4" src="img/播放按钮.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                                <img class="heartImage" src="img/爱心未收藏.png" alt="收藏"
+                                                    style="width: 20px; height: 20px;">
+                                            </div>
+                                        </li>
+                                        <li onmouseover="this.className='z-hvr'" onmouseout="this.className=''">
+                                            <span class="no no-top">6</span>
+                                            <a href="/song?id=2107560170" class="nm s-fc0 f-thide" title="烟火里的尘埃">烟火里的尘埃</a>
+                                            <div class="oper">
+                                                <img class="playButton" data-index="5" src="img/播放按钮.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                                <img class="heartImage" src="img/爱心未收藏.png" alt="收藏"
+                                                    style="width: 20px; height: 20px;">
+                                            </div>
+                                        </li>
+                                        <li onmouseover="this.className='z-hvr'" onmouseout="this.className=''">
+                                            <span class="no no-top">7</span>
+                                            <a href="/song?id=2107560170" class="nm s-fc0 f-thide" title="七里香">七里香</a>
+                                            <div class="oper">
+                                                <img class="playButton" data-index="6" src="img/播放按钮.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                                <img class="heartImage" src="img/爱心未收藏.png" alt="收藏"
+                                                    style="width: 20px; height: 20px;">
+                                            </div>
+                                        </li>
+                                        <li onmouseover="this.className='z-hvr'" onmouseout="this.className=''">
+                                            <span class="no no-top">8</span>
+                                            <a href="/song?id=2107560170" class="nm s-fc0 f-thide" title="溯">溯</a>
+                                            <div class="oper">
+                                                <img class="playButton" data-index="7" src="img/播放按钮.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                                <img class="heartImage" src="img/爱心未收藏.png" alt="收藏"
+                                                    style="width: 20px; height: 20px;">
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </dd>
+                            </dl>
+                        </div>
+                
+                        <div style="display: inline-block; vertical-align: top; width: 33%;">
+                            <dl class="blk">
+                                <dt class="top">
+                                    <div class="j-img-container">
+                                        <div class="cver u-cover u-cover-4">
+                                            <img class="j-img"
+                                                data-src="http://p3.music.126.net/wVmyNS6b_0Nn-y6AX8UbpQ==/109951166952686384.jpg?param=100y100"
+                                                src="http://p3.music.126.net/wVmyNS6b_0Nn-y6AX8UbpQ==/109951166952686384.jpg?param=100y100">
+                                        </div>
+                                        <div class="tit">
+                                            <p>新歌榜</p>
+                                        </div>
+                                    </div>
+                                </dt>
+                                <dd>
+                                    <ol>
+                                        <li onmouseover="this.className='z-hvr'" onmouseout="this.className=''">
+                                            <span class="no no-top">1</span>
+                                            <a href="/song?id=2095253997" class="nm s-fc0 f-thide" title="whataya Want from Me">whataya
+                                                Want from Me</a>
+                                            <div class="oper">
+                                                <img class="playButton" data-index="8" src="img/播放按钮.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                                <img class="heartImage" src="img/爱心未收藏.png" alt="收藏"
+                                                    style="width: 20px; height: 20px;">
+                                            </div>
+                                        </li>
+                                        <li onmouseover="this.className='z-hvr'" onmouseout="this.className=''">
+                                            <span class="no no-top">2</span>
+                                            <a href="/song?id=2110023759" class="nm s-fc0 f-thide" title="Love Story">Love Story</a>
+                                            <div class="oper">
+                                                <img class="playButton" data-index="9" src="img/播放按钮.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                                <img class="heartImage" src="img/爱心未收藏.png" alt="收藏"
+                                                    style="width: 20px; height: 20px;">
+                                            </div>
+                                        </li>
+                                        <li onmouseover="this.className='z-hvr'" onmouseout="this.className=''">
+                                            <span class="no no-top">3</span>
+                                            <a href="/song?id=2156881193" class="nm s-fc0 f-thide" title="Payphone">Payphone</a>
+                                            <div class="oper">
+                                                <img class="playButton" data-index="10" src="img/播放按钮.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                                <img class="heartImage" src="img/爱心未收藏.png" alt="收藏"
+                                                    style="width: 20px; height: 20px;">
+                                            </div>
+                                        </li>
+                                        <li onmouseover="this.className='z-hvr'" onmouseout="this.className=''">
+                                            <span class="no no-top">4</span>
+                                            <a href="/song?id=2095253997" class="nm s-fc0 f-thide" title="wolves">wolves</a>
+                                            <div class="oper">
+                                                <img class="playButton" data-index="11" src="img/播放按钮.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                                <img class="heartImage" src="img/爱心未收藏.png" alt="收藏"
+                                                    style="width: 20px; height: 20px;">
+                                            </div>
+                                        </li>
+                                        <li onmouseover="this.className='z-hvr'" onmouseout="this.className=''">
+                                            <span class="no no-top">5</span>
+                                            <a href="/song?id=2095253997" class="nm s-fc0 f-thide" title="Monsters">Monsters</a>
+                                            <div class="oper">
+                                                <img class="playButton" data-index="12" src="img/播放按钮.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                                <img class="heartImage" src="img/爱心未收藏.png" alt="收藏"
+                                                    style="width: 20px; height: 20px;">
+                                            </div>
+                                        </li>
+                                        <li onmouseover="this.className='z-hvr'" onmouseout="this.className=''">
+                                            <span class="no no-top">6</span>
+                                            <a href="/song?id=2095253997" class="nm s-fc0 f-thide" title="Flower of the North">Flower of
+                                                the North</a>
+                                            <div class="oper">
+                                                <img class="playButton" data-index="13" src="img/播放按钮.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                                <img class="heartImage" src="img/爱心未收藏.png" alt="收藏"
+                                                    style="width: 20px; height: 20px;">
+                                            </div>
+                                        </li>
+                                        <li onmouseover="this.className='z-hvr'" onmouseout="this.className=''">
+                                            <span class="no no-top">7</span>
+                                            <a href="/song?id=2095253997" class="nm s-fc0 f-thide" title="Counting Stars">Counting
+                                                Stars</a>
+                                            <div class="oper">
+                                                <img class="playButton" data-index="14" src="img/播放按钮.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                                <img class="heartImage" src="img/爱心未收藏.png" alt="收藏"
+                                                    style="width: 20px; height: 20px;">
+                                            </div>
+                                        </li>
+                                        <li onmouseover="this.className='z-hvr'" onmouseout="this.className=''">
+                                            <span class="no no-top">8</span>
+                                            <a href="/song?id=2095253997" class="nm s-fc0 f-thide" title="Welcome To New York">Welcome
+                                                To New York</a>
+                                            <div class="oper">
+                                                <img class="playButton" data-index="15" src="img/播放按钮.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                                <img class="heartImage" src="img/爱心未收藏.png" alt="收藏"
+                                                    style="width: 20px; height: 20px;">
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div style="display: inline-block; vertical-align: top; width: 33%;">
+                            <dl class="blk">
+                                <dt class="top">
+                                    <div class="j-img-container">
+                                        <div class="cver u-cover u-cover-4">
+                                            <img class="j-img"
+                                                data-src="http://p3.music.126.net/iFZ_nw2V86IFk90dc50kdQ==/109951166961388699.jpg?param=100y100"
+                                                src="http://p3.music.126.net/iFZ_nw2V86IFk90dc50kdQ==/109951166961388699.jpg?param=100y100">
+                                        </div>
+                                        <div class="tit">
+                                            <p>原创榜</p>
+                                        </div>
+                                    </div>
+                                </dt>
+                                <dd>
+                                    <ol>
+                                        <li onmouseover="this.className='z-hvr'" onmouseout="this.className=''">
+                                            <span class="no no-top">1</span>
+                                            <a href="/song?id=2143932711" class="nm s-fc0 f-thide" title="千本桜">千本桜</a>
+                                            <div class="oper">
+                                                <img class="playButton" data-index="16" src="img/播放按钮.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                                <img class="heartImage" src="img/爱心未收藏.png" alt="收藏"
+                                                    style="width: 20px; height: 20px;">
+                                            </div>
+                                        </li>
+                                        <li onmouseover="this.className='z-hvr'" onmouseout="this.className=''">
+                                            <span class="no no-top">2</span>
+                                            <a href="/song?id=1880855946" class="nm s-fc0 f-thide" title="胸がドキドキ">胸がドキドキ</a>
+                                            <div class="oper">
+                                                <img class="playButton" data-index="17" src="img/播放按钮.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                                <img class="heartImage" src="img/爱心未收藏.png" alt="收藏"
+                                                    style="width: 20px; height: 20px;">
+                                            </div>
+                                        </li>
+                                        <li onmouseover="this.className='z-hvr'" onmouseout="this.className=''">
+                                            <span class="no no-top">3</span>
+                                            <a href="/song?id=2156872127" class="nm s-fc0 f-thide" title="Mobius">Mobius</a>
+                                            <div class="oper">
+                                                <img class="playButton" data-index="18" src="img/播放按钮.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                                <img class="heartImage" src="img/爱心未收藏.png" alt="收藏"
+                                                    style="width: 20px; height: 20px;">
+                                            </div>
+                                        </li>
+                                        <li onmouseover="this.className='z-hvr'" onmouseout="this.className=''">
+                                            <span class="no no-top">4</span>
+                                            <a href="/song?id=2143932711" class="nm s-fc0 f-thide" title="βios">βios</a>
+                                            <div class="oper">
+                                                <img class="playButton" data-index="19" src="img/播放按钮.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                                <img class="heartImage" src="img/爱心未收藏.png" alt="收藏"
+                                                    style="width: 20px; height: 20px;">
+                                            </div>
+                                        </li>
+                                        <li onmouseover="this.className='z-hvr'" onmouseout="this.className=''">
+                                            <span class="no no-top">5</span>
+                                            <a href="/song?id=2143932711" class="nm s-fc0 f-thide" title="怪物">怪物</a>
+                                            <div class="oper">
+                                                <img class="playButton" data-index="20" src="img/播放按钮.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                                <img class="heartImage" src="img/爱心未收藏.png" alt="收藏"
+                                                    style="width: 20px; height: 20px;">
+                                            </div>
+                                        </li>
+                                        <li onmouseover="this.className='z-hvr'" onmouseout="this.className=''">
+                                            <span class="no no-top">6</span>
+                                            <a href="/song?id=2143932711" class="nm s-fc0 f-thide"
+                                                title="名前のない怪物(Instrumental)">名前のない怪物(Instrumental)</a>
+                                            <div class="oper">
+                                                <img class="playButton" data-index="21" src="img/播放按钮.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                                <img class="heartImage" src="img/爱心未收藏.png" alt="收藏"
+                                                    style="width: 20px; height: 20px;">
+                                            </div>
+                                        </li>
+                                        <li onmouseover="this.className='z-hvr'" onmouseout="this.className=''">
+                                            <span class="no no-top">7</span>
+                                            <a href="/song?id=2143932711" class="nm s-fc0 f-thide" title="Avid">Avid</a>
+                                            <div class="oper">
+                                                <img class="playButton" data-index="22" src="img/播放按钮.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                                <img class="heartImage" src="img/爱心未收藏.png" alt="收藏"
+                                                    style="width: 20px; height: 20px;">
+                                            </div>
+                                        </li>
+                                        <li onmouseover="this.className='z-hvr'" onmouseout="this.className=''">
+                                            <span class="no no-top">8</span>
+                                            <a href="/song?id=2143932711" class="nm s-fc0 f-thide" title="Tracer">Tracer</a>
+                                            <div class="oper">
+                                                <img class="playButton" data-index="40" src="img/播放按钮.png" alt="播放"
+                                                    style="width: 20px; height: 20px;">
+                                                <img class="heartImage" src="img/爱心未收藏.png" alt="收藏"
+                                                    style="width: 20px; height: 20px;">
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </dd>
+                            </dl>
+                        </div>
+                
+                    </div>
+                    <!-- 这是播放栏 -->
+                    <div class="play-bar">
+                        <img id="play-bar-img" src="" alt="歌曲图片" style="width: 60px; height: 60px; margin-right: 10px;">
+                        <span id="play-bar-title">歌曲名</span>
+                        <audio id="audio-player" controls>
+                            <source id="audio-source" src="" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="bottom-hover-zone" id="bottomHoverZone"></div>  
+      <!-- 这是用来放在屏幕底部的透明区域，当鼠标悬浮其上上时会唤醒播放栏 -->
+
+
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script type="text/javascript" src="js/script.js"></script>
+   
+   
+   </body>
+</html>
